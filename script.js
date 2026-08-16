@@ -200,8 +200,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("adminLoginForm").addEventListener("submit", function (e) {
       e.preventDefault();
-      var u = document.getElementById("adminUser").value;
-      var p = document.getElementById("adminPass").value;
+      var u = document.getElementById("adminUser").value.trim();
+      var p = document.getElementById("adminPass").value.trim();
       if (u.toLowerCase() === ADMIN_USER && p.toLowerCase() === ADMIN_PASS) {
         sessionStorage.setItem("sos_admin", "true");
         modal.remove();
