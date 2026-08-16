@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOS DIGITAL - Productos</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/conocenos.css" />
+  </head>
+
+  <body>
+    <main>
+      <h2 style="text-align: center; margin-top: 20px">Productos</h2>
+
+      <!-- FORMULARIO -->
+      <div class="form-card" style="margin: auto; margin-top: 20px">
+        <h2>Formulario de Productos</h2>
+
+        <form onsubmit="enviarProducto(event)">
+          <select id="categoria" required>
+            <option value="">Seleccione una categoría</option>
+            <option value="Redes">Redes</option>
+            <option value="Seguridad">Seguridad</option>
+            <option value="Python">Python</option>
+            <option value="Mantenimiento">Mantenimiento</option>
+            <option value="Hardware">Hardware</option>
+            <option value="IA">IA</option>
+          </select>
+
+          <input id="imagen" type="url" placeholder="URL de imagen" required />
+          <input id="precio" type="text" placeholder="Precio" required />
+
+          <!-- CORREGIDO: ahora es nombre -->
+          <input id="nombre" type="text" placeholder="Descripción" required />
+
+          <button type="submit" class="btn-submit">Agregar Producto</button>
+        </form>
+      </div>
+
+      <!-- PRODUCTOS -->
+      <section id="productList">
+        <div id="productos" class="paquetes"></div>
+      </section>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

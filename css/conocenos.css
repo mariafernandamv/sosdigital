@@ -1,0 +1,254 @@
+/* =========================
+   TITULOS
+========================= */
+.paquetes-titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 30px 0 8px;
+}
+
+.paquetes-sub {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   PAQUETES
+========================= */
+.paquetes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.paquete {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid transparent;
+}
+
+.paquete:hover {
+  transform: translateY(-5px);
+  border-color: var(--main);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   TEXTO INFO
+========================= */
+.info-texto {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+body.dark-mode .info-texto {
+  color: #aaa;
+}
+
+/* =========================
+   FORMULARIOS FLEX
+========================= */
+.formularios-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.form-card {
+  width: 420px;
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.form-card input,
+.form-card select {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  border: 1px solid #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0077ff, #00c6ff);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 119, 255, 0.3);
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 119, 255, 0.4);
+}
+
+.btn-contratar {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-contratar:hover {
+  background: var(--main);
+  transform: scale(1.05);
+}
+
+#otro-tema-wrap {
+  display: none;
+}
+
+/* =========================
+   PLATAFORMAS GRATUITAS
+========================= */
+.plataformas {
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.plat-titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+  color: var(--main);
+}
+
+.plat-sub {
+  text-align: center;
+  color: #888;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+body.dark-mode .plat-sub {
+  color: #aaa;
+}
+
+.plat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.plat-card {
+  display: block;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid #e0e0e0;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+body.dark-mode .plat-card {
+  border-color: #333;
+}
+
+.plat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-color: var(--main);
+}
+
+.plat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.plat-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.plat-card p {
+  margin: 0 0 10px;
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+body.dark-mode .plat-card p {
+  color: #aaa;
+}
+
+.plat-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.tag-gratis {
+  background: #eafaf1;
+  color: #1e8449;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 700px) {
+  .form-card {
+    width: 95%;
+  }
+
+  .paquete {
+    width: 90%;
+  }
+
+  .plat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plat-titulo {
+    font-size: 1.4rem;
+  }
+}

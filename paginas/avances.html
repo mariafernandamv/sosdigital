@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOS DIGITAL - Avances</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      .avances-hero {
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .avances-hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+      }
+      .avances-hero p {
+        font-size: 1.1rem;
+        opacity: 0.8;
+      }
+      .avance-banner {
+        display: flex;
+        align-items: stretch;
+        margin: 24px auto;
+        max-width: 900px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        transition: transform 0.3s;
+        background: var(--card);
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+      }
+      .avance-banner:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      }
+      .avance-banner img {
+        width: 280px;
+        min-height: 200px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+      .avance-info {
+        padding: 24px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .avance-info .tag {
+        display: inline-block;
+        padding: 3px 12px;
+        border-radius: 20px;
+        font-size: 0.72rem;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 10px;
+        width: fit-content;
+      }
+      .avance-info h2 {
+        margin: 0 0 8px;
+        font-size: 1.4rem;
+      }
+      .avance-info p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+      }
+      body.dark-mode .avance-info p {
+        color: #aaa;
+      }
+      .avance-info .avance-dest {
+        margin-top: 12px;
+        font-size: 0.85rem;
+        color: #999;
+      }
+      .avance-info .avance-dest strong {
+        color: var(--main);
+      }
+      .avance-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 14px;
+        padding: 10px 20px;
+        background: var(--main);
+        color: white;
+        border-radius: 8px;
+        font-size: 0.88rem;
+        font-weight: bold;
+        text-decoration: none;
+        width: fit-content;
+        transition: background 0.2s, transform 0.2s;
+      }
+      .avance-link:hover {
+        background: #5a52d5;
+        transform: scale(1.05);
+      }
+      @media (max-width: 700px) {
+        .avance-banner {
+          flex-direction: column;
+        }
+        .avance-banner img {
+          width: 100%;
+          min-height: 160px;
+        }
+        .avances-hero h1 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="avances-hero">
+        <h1>Lo mas nuevo en tecnologia</h1>
+        <p>Descubre los avances e innovaciones que estan cambiando el mundo</p>
+      </section>
+
+      <a class="avance-banner" data-card="IA Generativa" href="https://openai.com/index/introducing-chatgpt/" target="_blank">
+        <img src="../imagen/ia.webp" alt="IA Generativa" />
+        <div class="avance-info">
+          <span class="tag" style="background:#6c3483">Inteligencia Artificial</span>
+          <h2>IA Generativa: ChatGPT, Gemini y Copilot</h2>
+          <p>Los modelos de lenguaje como GPT-4o, Google Gemini y Microsoft Copilot estan revolucionando la forma en que trabajamos, creamos contenido y aprendemos. Ahora la IA puede generar texto, imagenes, codigo y hasta videos en segundos.</p>
+          <div class="avance-dest"><strong>Novedad 2025-2026:</strong> IA con capacidad de razonamiento avanzado y multimodal (texto + imagen + audio).</div>
+          <span class="avance-link">Leer mas &#8594;</span>
+        </div>
+      </a>
+
+      <a class="avance-banner" data-card="Apple Vision Pro" href="https://www.apple.com/es/apple-vision-pro/" target="_blank">
+        <img src="../imagen/inovador.webp" alt="Realidad Mixta" />
+        <div class="avance-info">
+          <span class="tag" style="background:#1a5276">Realidad Mixta</span>
+          <h2>Apple Vision Pro y Meta Quest 3</h2>
+          <p>Los visores de realidad mixta combinan el mundo real con elementos virtuales. Apple Vision Pro ofrece la experiencia mas inmersiva del mercado, mientras que Meta Quest 3 la hace accesible para todos.</p>
+          <div class="avance-dest"><strong>En tendencia:</strong> Trabajo remoto en 3D, gaming inmersivo y telemedicina.</div>
+          <span class="avance-link">Leer mas &#8594;</span>
+        </div>
+      </a>
+
+      <a class="avance-banner" data-card="5G y 6G" href="https://www.qualcomm.com/news/onq/2024/05/what-is-5g" target="_blank">
+        <img src="../imagen/redes.webp" alt="5G" />
+        <div class="avance-info">
+          <span class="tag" style="background:#1e8449">Conectividad</span>
+          <h2>5G y los primeros pasos hacia el 6G</h2>
+          <p>La red 5G ya esta disponible en muchas ciudades con velocidades de hasta 10 Gbps. Mientras tanto, investigadores ya trabajan en el 6G que promete internet con latencia cero y conexion masiva de dispositivos IoT.</p>
+          <div class="avance-dest"><strong>Impacto:</strong> Ciudades inteligentes, carros autonomos y telecirugia.</div>
+          <span class="avance-link">Leer mas &#8594;</span>
+        </div>
+      </a>
+
+      <a class="avance-banner" data-card="Robotica" href="https://www.bostondynamics.com/" target="_blank">
+        <img src="../imagen/futuro.webp" alt="Robotica" />
+        <div class="avance-info">
+          <span class="tag" style="background:#c0392b">Robotica</span>
+          <h2>Robots humanoides y automatizacion</h2>
+          <p>Empresas como Tesla (Optimus), Boston Dynamics y Figure estan creando robots humanoides capaces de caminar, manipular objetos y trabajar en fabricas. La automatizacion avanza rapido en la industria y los hogares.</p>
+          <div class="avance-dest"><strong>Dato:</strong> Se espera que para 2030 haya mas de 8 millones de robots humanoides en el mundo.</div>
+          <span class="avance-link">Leer mas &#8594;</span>
+        </div>
+      </a>
+
+      <a class="avance-banner" data-card="Computacion Cuantica" href="https://quantum.ibm.com/" target="_blank">
+        <img src="../imagen/procesador.webp" alt="Cuantica" />
+        <div class="avance-info">
+          <span class="tag" style="background:#b7950b">Computacion Cuantica</span>
+          <h2>El quantum computing se acerca a la realidad</h2>
+          <p>Google, IBM y Microsoft estan logrando avances clave en qubits estables. La computacion cuantica podra resolver en segundos problemas que hoy tardarian miles de anos en farmacos, clima y criptografia.</p>
+          <div class="avance-dest"><strong>Meta:</strong> Computadora cuantica util para 2029-2030.</div>
+          <span class="avance-link">Leer mas &#8594;</span>
+        </div>
+      </a>
+
+      <a class="avance-banner" data-card="Energia" href="https://cfs.energy/" target="_blank">
+        <img src="../imagen/tv.webp" alt="Energia" />
+        <div class="avance-info">
+          <span class="tag" style="background:#2e86c1">Energia Limpia</span>
+          <h2>Baterias solidas y fusion nuclear</h2>
+          <p>Las baterias solidas prometen celulares que cargan en 5 minutos y carros electricos con 1000 km de autonomia. Mientras tanto, empresas como Commonwealth Fusion estan cerca de lograr energia de fusion limpia e inagotable.</p>
+          <div class="avance-dest"><strong>Progreso:</strong> Primer reactor de fusion experimental operando en 2025.</div>
+          <span class="avance-link">Leer mas &#8594;</span>
+        </div>
+      </a>
+
+      <a class="avance-banner" data-card="Carros" href="https://waymo.com/" target="_blank">
+        <img src="../imagen/marca.webp" alt="Carros" />
+        <div class="avance-info">
+          <span class="tag" style="background:#2c3e50">Vehiculos Autonomos</span>
+          <h2>Carros sin chofer: Waymo, Tesla y mas</h2>
+          <p>Waymo ya opera taxis autonomos en varias ciudades de EE.UU. Tesla esta desarrollando su robotaxi. Los vehiculos autonomos estan transformando el transporte, la logistica y la movilidad urbana.</p>
+          <div class="avance-dest"><strong>Estado:</strong> Nivel 4 de autonomia ya disponible en transporte publico.</div>
+          <span class="avance-link">Leer mas &#8594;</span>
+        </div>
+      </a>
+
+      <a class="avance-banner" data-card="Ciberseguridad" href="https://www.kaspersky.com/resource-center/definitions/what-is-cyber-security" target="_blank">
+        <img src="../imagen/antivirus.webp" alt="Ciberseguridad" />
+        <div class="avance-info">
+          <span class="tag" style="background:#6c3483">Ciberseguridad</span>
+          <h2>IA contra IA: la nueva guerra digital</h2>
+          <p>Los atacantes usan IA para crear phishing hiperrealista y deepfakes. Defensivamente, la ciberseguridad ahora usa IA para detectar amenazas en tiempo real. La post-cuantica se vuelve urgente ante la computacion cuantica.</p>
+          <div class="avance-dest"><strong>Riesgo:</strong> En 2026, el 90% de los ataques tendran componentes de IA.</div>
+          <span class="avance-link">Leer mas &#8594;</span>
+        </div>
+      </a>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

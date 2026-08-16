@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOS DIGITAL - Nosotros</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      .nosotros-hero {
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .nosotros-hero h2 { font-size: 2rem; margin-bottom: 6px; }
+      .nosotros-hero p { opacity: 0.85; }
+      .equipo-section { max-width: 700px; margin: 30px auto; padding: 0 20px; }
+      .equipo-section h3 { color: var(--main); margin-bottom: 14px; text-align: center; }
+      .equipo-lista { display: flex; flex-direction: column; gap: 14px; }
+      .equipo-item {
+        display: flex; align-items: center; gap: 14px;
+        background: var(--card); padding: 14px 20px; border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 2px solid #e0e0e0;
+      }
+      body.dark-mode .equipo-item { border-color: #333; }
+      .equipo-avatar {
+        width: 50px; height: 50px; border-radius: 50%;
+        background: var(--main); color: white;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 1.1rem; font-weight: bold; flex-shrink: 0;
+      }
+      .equipo-item p { margin: 2px 0 0; font-size: 0.85rem; color: #888; }
+      body.dark-mode .equipo-item p { color: #aaa; }
+      .mision-vision {
+        max-width: 700px; margin: 30px auto; padding: 0 20px;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      }
+      .mv-card {
+        background: var(--card); border-radius: 12px; padding: 20px;
+        border: 2px solid #e0e0e0; text-align: center;
+      }
+      body.dark-mode .mv-card { border-color: #333; }
+      .mv-card h3 { margin: 0 0 8px; color: var(--main); }
+      .mv-card p { margin: 0; color: #666; line-height: 1.6; }
+      body.dark-mode .mv-card p { color: #aaa; }
+      .satisfaccion {
+        max-width: 600px; margin: 40px auto; padding: 0 20px;
+      }
+      .satisfaccion h3 { color: var(--main); text-align: center; margin-bottom: 16px; font-size: 1.3rem; }
+      .sat-form {
+        background: var(--card); border-radius: 16px; padding: 28px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.1); border: 2px solid #e0e0e0;
+      }
+      body.dark-mode .sat-form { border-color: #333; }
+      .sat-form label { display: block; margin: 14px 0 6px; font-weight: bold; font-size: 0.95rem; }
+      .sat-form input[type="text"],
+      .sat-form input[type="email"],
+      .sat-form textarea,
+      .sat-form select {
+        width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;
+        font-size: 0.95rem; font-family: inherit; resize: vertical;
+      }
+      .sat-form input:focus, .sat-form textarea:focus, .sat-form select:focus {
+        border: 1px solid var(--main); outline: none;
+      }
+      .sat-stars { display: flex; gap: 6px; margin-top: 4px; }
+      .sat-stars input[type="radio"] { display: none; }
+      .sat-stars label {
+        font-size: 1.8rem; cursor: pointer; color: #ccc; transition: color 0.2s;
+        margin: 0;
+      }
+      .sat-stars input[type="radio"]:checked ~ label,
+      .sat-stars label:hover,
+      .sat-stars label:hover ~ label { color: #f1c40f; }
+      .sat-btn {
+        width: 100%; margin-top: 18px; padding: 12px; border: none; border-radius: 10px;
+        background: linear-gradient(135deg, #0077ff, #00c6ff); color: white;
+        font-size: 1rem; font-weight: bold; cursor: pointer; transition: transform 0.2s;
+      }
+      .sat-btn:hover { transform: translateY(-2px); }
+      .sat-thanks { text-align: center; padding: 30px; color: var(--main); font-size: 1.1rem; display: none; }
+      @media (max-width: 600px) { .mision-vision { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="nosotros-hero">
+        <h2>Quienes somos</h2>
+        <p>Estudiantes apasionados por la informatica que ensenan de forma sencilla.</p>
+      </section>
+
+      <section class="mision-vision">
+        <div class="mv-card">
+          <h3>Mision</h3>
+          <p>Ayudar a aprender tecnologia de manera facil y practica, de forma gratuita.</p>
+        </div>
+        <div class="mv-card">
+          <h3>Vision</h3>
+          <p>Ser una plataforma educativa reconocida en el ambito tecnologico.</p>
+        </div>
+      </section>
+
+      <section class="equipo-section">
+        <h3>Equipo</h3>
+        <div class="equipo-lista">
+          <div class="equipo-item">
+            <div><strong>Eydan Alvarado</strong><p>Estudiante de Servicios en la Nube</p></div>
+          </div>
+          <div class="equipo-item">
+            <div><strong>Bryan Olivas</strong><p>Estudiante de Servicios en la Nube</p></div>
+          </div>
+          <div class="equipo-item">
+            <div><strong>Fernanda Munoz</strong><p>Estudiante de Servicios en la Nube</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="satisfaccion">
+        <h3>Encuesta de Satisfaccion</h3>
+        <div class="sat-form" id="satForm">
+          <form onsubmit="enviarSatisfaccion(event)">
+            <label>Nombre:</label>
+            <input type="text" placeholder="Tu nombre" required>
+
+            <label>Correo (opcional):</label>
+            <input type="email" placeholder="Tu correo">
+
+            <label>Que tan satisfecho estas con SOS DIGITAL?</label>
+            <div class="sat-stars">
+              <input type="radio" id="s5" name="rating" value="5"><label for="s5">&#9733;</label>
+              <input type="radio" id="s4" name="rating" value="4"><label for="s4">&#9733;</label>
+              <input type="radio" id="s3" name="rating" value="3"><label for="s3">&#9733;</label>
+              <input type="radio" id="s2" name="rating" value="2"><label for="s2">&#9733;</label>
+              <input type="radio" id="s1" name="rating" value="1"><label for="s1">&#9733;</label>
+            </div>
+
+            <label>Como conociste SOS DIGITAL?</label>
+            <select required>
+              <option value="">Selecciona una opcion</option>
+              <option>Redes sociales</option>
+              <option>Un amigo o compañero</option>
+              <option>Buscador de Google</option>
+              <option>YouTube</option>
+              <option>Otro</option>
+            </select>
+
+            <label>Que secciones te gustan mas?</label>
+            <select required>
+              <option value="">Selecciona</option>
+              <option>Hardware</option>
+              <option>Software</option>
+              <option>Avances Tecnologicos</option>
+              <option>Estudiantes</option>
+              <option>Todas</option>
+            </select>
+
+            <label>Comentarios o sugerencias:</label>
+            <textarea rows="4" placeholder="Escribe tu opinion..."></textarea>
+
+            <button type="submit" class="sat-btn">Enviar opinion</button>
+          </form>
+        </div>
+        <div class="sat-thanks" id="satThanks">
+          Tu encuesta ha sido enviada, gracias. Nos ayudara a mejorar.
+        </div>
+      </section>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
