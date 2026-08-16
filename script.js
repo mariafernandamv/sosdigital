@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       var u = document.getElementById("adminUser").value;
       var p = document.getElementById("adminPass").value;
-      if (u === ADMIN_USER && p === ADMIN_PASS) {
+      if (u.toLowerCase() === ADMIN_USER && p.toLowerCase() === ADMIN_PASS) {
         sessionStorage.setItem("sos_admin", "true");
         modal.remove();
         showAdminPanel();
