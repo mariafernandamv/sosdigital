@@ -186,8 +186,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <h2>Panel de Administrador</h2>
         <p>Inicia sesion para subir documentos a las tarjetas.</p>
         <form id="adminLoginForm">
-          <input type="text" id="adminUser" placeholder="Usuario" required autocomplete="off">
-          <input type="password" id="adminPass" placeholder="Contrasena" required>
+          <input type="text" id="adminUser" placeholder="Usuario" required autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false">
+          <input type="password" id="adminPass" placeholder="Contrasena" required autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false">
           <button type="submit" class="btn-submit">Iniciar sesion</button>
         </form>
         <p class="admin-hint">Si necesitas acceso, contacta al correo: <a href="mailto:servicioalclient.sosdigital@gmail.com">servicioalclient.sosdigital@gmail.com</a></p>
