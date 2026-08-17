@@ -36,9 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>Aprende informatica desde cero con nosotros.</p>
       </div>
       <div class="footer-section">
-        <h4>Contactanos</h4>
-        <p><a href="mailto:sosdigitalcr@gmail.com">sosdigitalcr@gmail.com</a></p>
-        <p><a href="https://wa.me/50671328864" target="_blank">WhatsApp</a></p>
+        <h4>Siguenos en YouTube</h4>
+        <p><a href="https://www.youtube.com/@SOSDigital" target="_blank">Canal de YouTube</a></p>
       </div>
       <div class="footer-section">
         <h4>Colegio Tecnico Profesional de Puriscal</h4>
