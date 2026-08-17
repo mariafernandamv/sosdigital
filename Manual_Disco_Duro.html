@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Disco Duro - SOS DIGITAL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 30px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #3498db;
+      margin-top: 30px;
+      border-left: 4px solid #3498db;
+      padding-left: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #ebf5fb;
+    }
+    .paso {
+      background: #ebf5fb;
+      border-left: 4px solid #3498db;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .paso strong {
+      color: #2c3e50;
+    }
+    .alerta {
+      background: #fdedec;
+      border-left: 4px solid #e74c3c;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .alerta strong {
+      color: #c0392b;
+    }
+    .consejo {
+      background: #eafaf1;
+      border-left: 4px solid #27ae60;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .consejo strong {
+      color: #1e8449;
+    }
+    ul, ol {
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .portada {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+    .portada h1 {
+      font-size: 2.2em;
+      border: none;
+    }
+    .portada p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .img-container p {
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 6px;
+      font-style: italic;
+    }
+    .img-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .img-row img {
+      max-width: 48%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    @media print {
+      body { margin: 0; padding: 20px; }
+      img { max-width: 500px !important; height: auto !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Disco Duro</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <div class="img-container">
+    <img src="https://www.profesionalreview.com/wp-content/uploads/2018/12/Tipos-de-discos-duros-en-la-actualidad-2.jpg" alt="Tipos de discos duros">
+    <p>Tipos de discos duros: HDD, SSD y SSD NVMe - Fuente: Profesional Review</p>
+  </div>
+
+  <h2>1. Que es un disco duro</h2>
+  <p>El disco duro es el componente donde se guardan todos tus archivos, programas, fotos y el sistema operativo. Sin el disco duro, la computadora no tendria de donde cargar la informacion al encender.</p>
+
+  <div class="consejo">
+    <strong>Importante:</strong> El disco duro es como la "memoria a largo plazo" de la computadora. La RAM es la memoria a corto plazo (se borra al apagar). Todo lo que guardas queda en el disco duro.
+  </div>
+
+  <h2>2. Tipos de discos duros</h2>
+
+  <div class="img-row">
+    <div>
+      <img src="https://todoclick.cl/hdd-disco-duro-mecanico-555" alt="Disco Duro HDD Mecanico">
+      <p><strong>HDD</strong><br>Disco Duro Mecanico</p>
+    </div>
+    <div>
+      <img src="https://www.sandisk.com/content/dam/store/en-us/assets/products/internal-storage/wd-red-sata-ssd/featured/wd-red-sata-ssd-video.jpg" alt="Disco SSD SATA">
+      <p><strong>SSD SATA</strong><br>Disco Solido State</p>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Caracteristica</th>
+        <th>HDD (Mecanico)</th>
+        <th>SSD SATA</th>
+        <th>SSD NVMe (M.2)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tecnologia</td>
+        <td>Platos giratorios magneticos</td>
+        <td>Memoria flash (circuitos)</td>
+        <td>Memoria flash + interfaz PCIe</td>
+      </tr>
+      <tr>
+        <td>Velocidad</td>
+        <td>Lenta (80-160 MB/s)</td>
+        <td>Rapida (500-560 MB/s)</td>
+        <td>Muy rapida (3000-7000 MB/s)</td>
+      </tr>
+      <tr>
+        <td>Resistencia</td>
+        <td>Fragil (piezas moviles)</td>
+        <td>Resistente</td>
+        <td>Muy resistente</td>
+      </tr>
+      <tr>
+        <td>Ruido</td>
+        <td>Hace ruido (zumbidos)</td>
+        <td>Silencioso</td>
+        <td>Silencioso</td>
+      </tr>
+      <tr>
+        <td>Precio</td>
+        <td>Mas barato</td>
+        <td>Intermedio</td>
+        <td>Mas caro</td>
+      </tr>
+      <tr>
+        <td>Formato</td>
+        <td>3.5" (escritorio) o 2.5" (portatil)</td>
+        <td>2.5"</td>
+        <td>M.2 (tarjeta delgada)</td>
+      </tr>
+      <tr>
+        <td>Capacidad</td>
+        <td>Grandes (1-20 TB)</td>
+        <td>Mediana (120 GB - 4 TB)</td>
+        <td>Mediana (250 GB - 4 TB)</td>
+      </tr>
+      <tr>
+        <td>Durabilidad</td>
+        <td>3-5 anos</td>
+        <td>5-10 anos</td>
+        <td>5-10 anos</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. HDD - Disco Duro Mecanico</h2>
+
+  <div class="img-container">
+    <img src="https://okdiario.com/img/tecnologia/2017/01/29/disco-duro-seagate.jpg" alt="Disco Duro HDD Mecanico Seagate">
+    <p>Disco Duro HDD Mecanico Seagate - Fuente: OKDiario</p>
+  </div>
+
+  <p>El <strong>HDD (Hard Disk Drive)</strong> es el tipo de disco duro mas antiguo y tradicional. Funciona con <strong>platos giratorios</strong> cubiertos de material magnetico y un <strong>brazo lector</strong> que se mueve sobre ellos para leer y escribir datos.</p>
+
+  <ul>
+    <li><strong>Como funciona:</strong> Los platos giran a 5400 o 7200 RPM (revoluciones por minuto) mientras el brazo lector se desplaza para acceder a los datos.</li>
+    <li><strong>Ventaja:</strong> Son economicos y ofrecen grandes capacidades de almacenamiento.</li>
+    <li><strong>Desventaja:</strong> Son lentos, frágiles (si los golpeaswhile funcionando se danan), y hacen ruido.</li>
+    <li><strong>Usos ideales:</strong> Almacenamiento de archivos grandes, respaldo de datos, PC de oficina.</li>
+  </ul>
+
+  <div class="alerta">
+    <strong>CUIDADO:</strong> Si escuchas clics o ruidos extraos en un HDD, apaga la PC inmediatamente. El brazo lector puede estar danando los platos.
+  </div>
+
+  <h2>4. SSD SATA - Disco Solido</h2>
+
+  <div class="img-container">
+    <img src="https://www.sandisk.com/content/dam/store/en-us/assets/products/internal-storage/wd-red-sata-ssd/featured/wd-red-sata-ssd-video.jpg" alt="SSD SATA">
+    <p>SSD SATA - WD Red SA500 NAS - Fuente: SanDisk</p>
+  </div>
+
+  <p>El <strong>SSD (Solid State Drive)</strong> es un disco que no tiene partes moviles. Usa <strong>memoria flash</strong> (como las memorias USB pero mucho mas rapida) para guardar datos.</p>
+
+  <ul>
+    <li><strong>Como funciona:</strong> Usa circuitos integrados para almacenar datos electronicamente. No hay platos ni brazos mecanicos.</li>
+    <li><strong>Ventaja:</strong> Es mucho mas rapido que un HDD (hasta 10 veces mas veloz al encender la PC).</li>
+    <li><strong>Desventaja:</strong> Es mas caro por GB de almacenamiento.</li>
+    <li><strong>Usos ideales:</strong> Sistema operativo, programas que usas frecuentemente, gaming, edicion de video.</li>
+  </ul>
+
+  <div class="consejo">
+    <strong>Consejo:</strong> Si tu PC tarda mucho en encender, instalar un SSD es la mejor mejora que le puedes hacer. Windows pasara de tardar 2-3 minutos a tardar 15-30 segundos.
+  </div>
+
+  <h2>5. SSD NVMe (M.2) - El mas rapido</h2>
+
+  <div class="img-container">
+    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SSD M.2 NVMe">
+    <p>SSD M.2 NVMe - La tarjeta mas pequeña y rapida</p>
+  </div>
+
+  <p>El <strong>SSD NVMe (Non-Volatile Memory Express)</strong> es la tecnologia mas moderna y rapida. Se conecta directamente a la tarjeta madre mediante el slot <strong>M.2</strong> (una ranura pequeña tipo tarjeta de credito).</p>
+
+  <ul>
+    <li><strong>Como funciona:</strong> Usa la interfaz PCIe (la misma que usan las tarjetas de video) para alcanzar velocidades increibles.</li>
+    <li><strong>Ventaja:</strong> Velocidades de lectura de 3000 a 7000 MB/s (10 veces mas rapido que un SSD SATA).</li>
+    <li><strong>Desventaja:</strong> Es el mas caro y no todas las PC antiguas lo soportan.</li>
+    <li><strong>Usos ideales:</strong> Gaming profesional, edicion de video 4K/8K, servidores, workstations.</li>
+  </ul>
+
+  <div class="consejo">
+    <strong>Para identificarlo:</strong> El SSD M.2 NVMe parece una memoria RAM pequeña. Se inserta directamente en la tarjeta madre sin necesidad de cables.
+  </div>
+
+  <h2>6. Formatos de discos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Formato</th>
+        <th>Tamaño</th>
+        <th>Uso principal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>3.5"</strong></td>
+        <td>Grande (tamaño de una mano)</td>
+        <td>PC de escritorio (escritorio)</td>
+      </tr>
+      <tr>
+        <td><strong>2.5"</strong></td>
+        <td>Mediano (tamaño de un telefono)</td>
+        <td>Portatiles, consolas, PC compactas</td>
+      </tr>
+      <tr>
+        <td><strong>M.2</strong></td>
+        <td>Pequeño (tamaño de una tarjeta de credito)</td>
+        <td>PC modernas, portatiles delgados</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>7. Cuando falla el disco duro</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sintoma</th>
+        <th>Que significa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>La PC tarda mucho en encender</td>
+        <td>El disco puede tener sectores danados</td>
+      </tr>
+      <tr>
+        <td>Archivos que no abren o estan corruptos</td>
+        <td>Deterioro de platos o sectores defectuosos</td>
+      </tr>
+      <tr>
+        <td>Ruidos extraos (clics, raspaduras)</td>
+        <td>El brazo mecanico esta fallando (HDD)</td>
+      </tr>
+      <tr>
+        <td>Pantallazos azules frecuentes</td>
+        <td>El sistema no puede leer datos criticos</td>
+      </tr>
+      <tr>
+        <td>La PC se congela o tarda en responder</td>
+        <td>Lectura/escritura muy lenta o intermitente</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>8. Materiales necesarios</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Material</th>
+        <th>Para que sirve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Set de destornilladores</td>
+        <td>Para abrir el gabinete y extraer el disco</td>
+      </tr>
+      <tr>
+        <td>Pulsera antiestatica</td>
+        <td>Para proteger el disco de descargas electricas</td>
+      </tr>
+      <tr>
+        <td>Destornillador Phillips (cruz)</td>
+        <td>Para desmontar el disco de las bahias</td>
+      </tr>
+      <tr>
+        <td>Unidad USB externa (opcional)</td>
+        <td>Para respaldar datos antes de cambiar</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>9. Como cambiar el disco duro</h2>
+
+  <div class="paso">
+    <strong>Paso 1:</strong> Apaga la PC, desconecta el cable de corriente y ponte la pulsera antiestatica conectada a metal.<br><br>
+    <strong>Paso 2:</strong> Abre el lateral del gabinete (normalmente 2 tornillos atras).<br><br>
+    <strong>Paso 3:</strong> Localiza el disco duro. Generalmente esta en una bahia en la parte frontal del gabinete, sujeto con 4 tornillos.<br><br>
+    <strong>Paso 4:</strong> Desconecta el cable de datos (SATA, el plano) y el cable de alimentacion (el mas pequeno de 15 pines).<br><br>
+    <strong>Paso 5:</strong> Afloja los 4 tornillos que sujetan el disco a la bahia y extraelo con cuidado.<br><br>
+    <strong>Paso 6:</strong> Coloca el disco nuevo en la misma posicion, alineando los tornillos con los orificios de la bahia.<br><br>
+    <strong>Paso 7:</strong> Aprieta los 4 tornillos en diagonal (no fuerces).<br><br>
+    <strong>Paso 8:</strong> Reconecta el cable SATA y el cable de alimentacion. Asegurate de que encajen bien (tienen una forma que solo encajan en una direccion).<br><br>
+    <strong>Paso 9:</strong> Cierra el gabinete, reconecta los cables externos y enciende la PC.<br><br>
+    <strong>Paso 10:</strong> Entra al BIOS (Supr o F2) para verificar que el nuevo disco aparezca en la lista de dispositivos.
+  </div>
+
+  <h2>10. Formatear el disco nuevo</h2>
+
+  <div class="paso">
+    <strong>Paso 11:</strong> Si el disco nuevo no aparece en "Mi Equipo", ve a Administracion de Discos (clic derecho en Inicio > Administracion de Discos).<br><br>
+    <strong>Paso 12:</strong> Haz clic derecho en el disco nuevo > "Inicializar disco" > selecciona MBR o GPT (GPT para discos de mas de 2 TB).<br><br>
+    <strong>Paso 13:</strong> Haz clic derecho en el espacio no asignado > "Nuevo volumen simple" > asigna una letra de unidad.<br><br>
+    <strong>Paso 14:</strong> Selecciona el sistema de archivos NTFS (para Windows) y marca "Formato rapido".<br><br>
+    <strong>Paso 15:</strong> Dale a "Siguiente" y "Finalizar". El disco ya estara listo para usar.
+  </div>
+
+  <h2>11. Tips importantes</h2>
+  <ul>
+    <li><strong>No golpees los discos HDD.</strong> Tienen platos giratorios internos que se danan facilmente.</li>
+    <li><strong>Guarda los discos en lugar seco</strong> y alejados de imanes fuertes.</li>
+    <li><strong>Si tu disco es SSD,</strong> no necesitas desfragmentarlo. Los SSD no usan piezas mecanicas.</li>
+    <li><strong>Para HDD,</strong> haz desfragmentacion cada 3-4 meses para mantener la velocidad.</li>
+    <li><strong>Usa un SSD como disco principal</strong> (donde va Windows) y un HDD para almacenamiento secundario.</li>
+    <li><strong>Si tu PC soporta M.2 NVMe,</strong> es la mejor opcion para velocidad maxima.</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Disco Duro - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

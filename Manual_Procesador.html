@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Procesador - SOS DIGITAL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 30px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 3px solid #9b59b6;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #9b59b6;
+      margin-top: 30px;
+      border-left: 4px solid #9b59b6;
+      padding-left: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background-color: #9b59b6;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f4ecf7;
+    }
+    .paso {
+      background: #f4ecf7;
+      border-left: 4px solid #9b59b6;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .paso strong {
+      color: #2c3e50;
+    }
+    .alerta {
+      background: #fdedec;
+      border-left: 4px solid #e74c3c;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .alerta strong {
+      color: #c0392b;
+    }
+    .consejo {
+      background: #eafaf1;
+      border-left: 4px solid #27ae60;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .consejo strong {
+      color: #1e8449;
+    }
+    ul, ol {
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .portada {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+    .portada h1 {
+      font-size: 2.2em;
+      border: none;
+    }
+    .portada p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .img-container p {
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 6px;
+      font-style: italic;
+    }
+    .img-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .img-row img {
+      max-width: 48%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    @media print {
+      body { margin: 0; padding: 20px; }
+      img { max-width: 500px !important; height: auto !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Procesador</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <div class="img-container">
+    <img src="https://i.blogs.es/cf55cd/1366_2000/450_1000.webp" alt="Procesador moderno">
+    <p>Procesador moderno listo para ser instalado - Fuente: Genbeta</p>
+  </div>
+
+  <h2>1. Que es el procesador</h2>
+  <p>El procesador (CPU - Central Processing Unit) es el "cerebro" de la computadora. Es el componente que ejecuta todas las instrucciones del sistema operativo y de los programas. Mientras mas rapido sea el procesador, mas rapido funcionara la PC.</p>
+
+  <div class="consejo">
+    <strong>Dato interesante:</strong> Un procesador moderno puede ejecutar miles de millones de operaciones por segundo. Trabaja en conjunto con la RAM para procesar datos y con el disco duro para guardarlos.
+  </div>
+
+  <h2>2. Parts del procesador</h2>
+
+  <div class="img-row">
+    <div>
+      <img src="https://media.istockphoto.com/id/861568844/es/foto/z%C3%B3calo-para-el-procesador-o-cpu-vista-superior-foto-macro-hardware-de-la-computadora-electr%C3%B3nica.jpg?s=612x612&w=is&k=20&c=Q7Mh4fokmAVaSqXepzPw8oBOWj6WLZvidcDyiuvw9vs=" alt="Zocalo del procesador">
+      <p><strong>Zocalo del procesador:</strong> Donde se coloca el CPU</p>
+    </div>
+    <div>
+      <img src="https://static.vecteezy.com/system/resources/previews/003/027/241/non_2x/realistic-cpu-back-view-processor-chip-on-white-background-photo.jpg" alt="CPU vista inferior">
+      <p><strong>Vista inferior:</strong> Los pads de contacto</p>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Parte</th>
+        <th>Funcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Die (nucleo de silicio)</td>
+        <td>Contiene todos los transistores que hacen los calculos</td>
+      </tr>
+      <tr>
+        <td>IHS (tapa metalica)</td>
+        <td>Protege el die y disipa calor hacia el cooler</td>
+      </tr>
+      <tr>
+        <td>Pins o pads de contacto</td>
+        <td>Conectan el CPU con la tarjeta madre (socket)</td>
+      </tr>
+      <tr>
+        <td>Memoria cache integrada</td>
+        <td>Almacenamiento rapido dentro del CPU para datos frecuentes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Tipos de procesadores</h2>
+
+  <div class="img-container">
+    <img src="https://media.es.wired.com/photos/65fce688f55f3fd353a93d7c/16:9/w_2560%2Cc_limit/Intel%2520core%2520ultra%25207.jpg" alt="Intel Core Ultra">
+    <p>Nueva familia Intel Core Ultra - Fuente: WIRED</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Marcas</th>
+        <th>Series</th>
+        <th>Uso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Intel</strong></td>
+        <td>Core i3, i5, i7, i9, Core Ultra</td>
+        <td>Escritorio, gaming, servidores</td>
+      </tr>
+      <tr>
+        <td><strong>AMD</strong></td>
+        <td>Ryzen 3, 5, 7, 9, Threadripper</td>
+        <td>Escritorio, gaming, estaciones de trabajo</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="consejo">
+    <strong>Cual elegir:</strong> Para tareas basicas (ofimatica, internet) un i3 o Ryzen 3 es suficiente. Para gaming y edicion de video necesitas un i7/Ryzen 7 o superior.
+  </div>
+
+  <h2>4. Como saber que procesador tienes</h2>
+
+  <div class="img-container">
+    <img src="https://media.es.wired.com/photos/65fce3daa76b2e2db2916116/master/w_1600%2Cc_limit/Captura%2520de%2520pantalla%25202024-03-21%2520a%2520la(s)%252010.26.01.png" alt="Informacion del procesador">
+    <p>Informacion del procesador en Windows - Fuente: WIRED</p>
+  </div>
+
+  <p>Existen varias formas de saber que procesador tiene tu PC:</p>
+
+  <ul>
+    <li><strong>En Windows:</strong> Clic derecho en "Este equipo" > Propiedades. Ahi aparece el modelo del procesador.</li>
+    <li><strong>Administrador de tareas:</strong> Clic derecho en la barra de tareas > Administrador de tareas > Pestaña "Rendimiento" > "CPU".</li>
+    <li><strong>Configuracion:</strong> Inicio > Configuracion > Sistema > Acerca de.</li>
+  </ul>
+
+  <h2>5. Cuando falla el procesador</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sintoma</th>
+        <th>Que significa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>La PC no enciende (no hace nada)</td>
+        <td>Puede ser el CPU o la tarjeta madre</td>
+      </tr>
+      <tr>
+        <td>Pantallazo azul constante</td>
+        <td>El CPU puede tener nucleos danados</td>
+      </tr>
+      <tr>
+        <td>La PC se apaga sola al usarla</td>
+        <td>Sobrecalentamiento o falla electrica del CPU</td>
+      </tr>
+      <tr>
+        <td>Errores en programas al procesar datos</td>
+        <td>Algunos nucleos del CPU estan fallando</td>
+      </tr>
+      <tr>
+        <td>Rendimiento muy lento sin razon</td>
+        <td>El CPU puede estar en "throttling" por calor o daño</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alerta">
+    <strong>Si la PC no enciende:</strong> Antes de culpar al procesador, verifica que la tarjeta madre este bien conectada y que la fuente de poder funcione. El procesador es lo ultimo en fallar.
+  </div>
+
+  <h2>6. Materiales necesarios</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Material</th>
+        <th>Para que sirve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Procesador nuevo (compatible)</td>
+        <td>Reemplazar el CPU danado</td>
+      </tr>
+      <tr>
+        <td>Pasta termica nueva</td>
+        <td>Aplicar entre el CPU y el cooler</td>
+      </tr>
+      <tr>
+        <td>Set de destornilladores</td>
+        <td>Para desmontar el cooler y el CPU</td>
+      </tr>
+      <tr>
+        <td>Pulsera antiestatica</td>
+        <td>Proteger el CPU de descargas</td>
+      </tr>
+      <tr>
+        <td>Trabalenguas (pin extractor)</td>
+        <td>Para sacar el CPU sin danar los pins (solo CPUs Intel LGA)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alerta">
+    <strong>IMPORTANTE:</strong> Asegurate de que el procesador nuevo sea compatible con tu tarjeta madre. Intel y AMD usan sockets diferentes. Tambien verifica que el socket sea compatible (ej: Intel LGA 1700 vs AMD AM5).
+  </div>
+
+  <h2>7. Como quitar el procesador</h2>
+
+  <div class="paso">
+    <strong>Paso 1:</strong> Apaga la PC, desconecta el cable de corriente y ponte la pulsera antiestatica conectada a metal.<br><br>
+    <strong>Paso 2:</strong> Abre el gabinete y localiza el cooler del CPU (el ventilador grande sobre el procesador).<br><br>
+    <strong>Paso 3:</strong> Desconecta el cable del cooler del header "CPU_FAN" en la tarjeta madre.<br><br>
+    <strong>Paso 4:</strong> Afloja los tornillos o clips que sujetan el cooler al socket. Generalmente son 4 tornillos en diagonal.<br><br>
+    <strong>Paso 5:</strong> Levanta el cooler con cuidado, haciendo un ligero movimiento giratorio para despegarlo. NO lo fuerces.<br><br>
+    <strong>Paso 6:</strong> Limpiar la pasta termica vieja del CPU y del cooler con servilletas y limpia conectores o alcohol isopropilico.
+  </div>
+
+  <div class="paso">
+    <strong>Paso 7:</strong> Levanta la palanca del socket (la barra metalica al lado del procesador).<br><br>
+    <strong>Paso 8:</strong> Abre la tapa del socket (el marco metalico que cubre el CPU).<br><br>
+    <strong>Paso 9:</strong> Con cuidado, levanta el procesador del socket. Si es Intel, usa el trabajalenguas para sacarlo sin tocar los pads. Si es AMD Ryzen, levantalo verticalmente sin moverlo de lado a lado.<br><br>
+    <strong>Paso 10:</strong> NO toques los pins (AMD) ni los pads de contacto (Intel) con los dedos. Coloca el CPU viejo en una bolsa antiestatica o en su empaque original.
+  </div>
+
+  <div class="alerta">
+    <strong>CUIDADO:</strong> Los procesadores AMD Ryzen tienen los pins en el CPU. Si doblas o rompes un pin, el procesador queda inutil. Manipulalo con mucho cuidado y solo por los bordes metalicos.
+  </div>
+
+  <h2>8. Como instalar el procesador nuevo</h2>
+
+  <div class="img-container">
+    <img src="https://media.istockphoto.com/id/861568844/es/foto/z%C3%B3calo-para-el-procesador-o-cpu-vista-superior-foto-macro-hardware-de-la-computadora-electr%C3%B3nica.jpg?s=1024x1024&w=is&k=20&c=Tlx5DCuRXMBb1gZe46BrqGi642AmU21nPK3l9SKSIB4=" alt="Socket CPU en tarjeta madre">
+    <p>Socket de CPU en la tarjeta madre - listo para recibir el procesador - Fuente: iStock</p>
+  </div>
+
+  <div class="paso">
+    <strong>Paso 11:</strong> Verifica que el socket este limpio y sin polvo. Si hay residuos de pasta, limpia con una servilleta humedecida.<br><br>
+    <strong>Paso 12:</strong> Localiza el indicador de orientacion (un triangulo dorado en una esquina del CPU o una flecha en el socket).<br><br>
+    <strong>Paso 13:</strong> Coloca el procesador en el socket alineando el triangulo del CPU con el del socket. Debe caer por su propio peso, NO lo fuerces.<br><br>
+    <strong>Paso 14:</strong> Cierra la tapa del socket y baja la palanca para bloquear el procesador en su lugar. Deberas hacer un poco de fuerza, es normal.<br><br>
+    <strong>Paso 15:</strong> Aplica un punto de pasta termica (grano de frijol) en el centro del procesador.
+  </div>
+
+  <div class="paso">
+    <strong>Paso 16:</strong> Coloca el cooler del CPU sobre el procesador, alineando los tornillos con los orificios de la tarjeta madre.<br><br>
+    <strong>Paso 17:</strong> Aprieta los tornillos en diagonal (uno, luego el opuesto, y asi sucesivamente) para que la presion sea uniforme.<br><br>
+    <strong>Paso 18:</strong> Reconecta el cable del cooler al header "CPU_FAN" en la tarjeta madre.
+  </div>
+
+  <h2>9. Verificar que funcione</h2>
+
+  <div class="paso">
+    <strong>Paso 19:</strong> Cierra el gabinete y reconecta todos los cables externos.<br><br>
+    <strong>Paso 20:</strong> Enciende la PC y entra al BIOS (Supr o F2 al encender).<br><br>
+    <strong>Paso 21:</strong> En el BIOS, verifica que el procesador nuevo aparezca con el modelo correcto y la velocidad de reloj adecuada.<br><br>
+    <strong>Paso 22:</strong> Revisa la temperatura del CPU. Deberia estar entre 30-40 grados en reposo.<br><br>
+    <strong>Paso 23:</strong> Si todo esta bien, guarda los cambios del BIOS (F10) y deja que Windows cargue normalmente.
+  </div>
+
+  <div class="consejo">
+    <strong>Si Windows no reconoce el nuevo CPU:</strong> Es normal. Windows generalmente detecta el procesador automaticamente. Si no lo hace, reinicia la PC una vez mas.
+  </div>
+
+  <h2>10. Tips importantes</h2>
+  <ul>
+    <li><strong>Nunca fuerces el procesador</strong> en el socket. Si no cae facilmente, revisa la orientacion.</li>
+    <li><strong>No toques los pads de contacto</strong> (la parte de abajo del CPU) con los dedos.</li>
+    <li><strong>Siempre usa pulsera antiestatica</strong> al manipular el procesador.</li>
+    <li><strong>Verifica compatibilidad</strong> antes de comprar un CPU nuevo (socket, chipset, generacion).</li>
+    <li><strong>Guara el CPU viejo</strong> en su empaque original o en una bolsa antiestatica.</li>
+    <li><strong>Despues de cambiar CPU,</strong> es recomendable reinstalar Windows si el sistema anterior era muy viejo.</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Procesador - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Instalacion de Windows - SOS DIGITAL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 30px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #3498db;
+      margin-top: 30px;
+      border-left: 4px solid #3498db;
+      padding-left: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #ebf5fb;
+    }
+    .paso {
+      background: #ebf5fb;
+      border-left: 4px solid #3498db;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .paso strong {
+      color: #2c3e50;
+    }
+    .alerta {
+      background: #fdedec;
+      border-left: 4px solid #e74c3c;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .alerta strong {
+      color: #c0392b;
+    }
+    .consejo {
+      background: #eafaf1;
+      border-left: 4px solid #27ae60;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .consejo strong {
+      color: #1e8449;
+    }
+    ul, ol {
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .portada {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+    .portada h1 {
+      font-size: 2.2em;
+      border: none;
+    }
+    .portada p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .img-container p {
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 6px;
+      font-style: italic;
+    }
+    @media print {
+      body { margin: 0; padding: 20px; }
+      img { max-width: 500px !important; height: auto !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Instalacion de Windows</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <h2>1. Que necesitas antes de instalar</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Requisito</th>
+        <th>Minimo</th>
+        <th>Recomendado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Procesador</td>
+        <td>1 GHz o mas rapido</td>
+        <td>2 GHz o mas rapido</td>
+      </tr>
+      <tr>
+        <td>RAM</td>
+        <td>2 GB (32 bits) / 4 GB (64 bits)</td>
+        <td>8 GB o mas</td>
+      </tr>
+      <tr>
+        <td>Almacenamiento</td>
+        <td>32 GB o mas</td>
+        <td>128 GB SSD</td>
+      </tr>
+      <tr>
+        <td>Tarjeta de video</td>
+        <td>DirectX 9 con WDDM 1.0</td>
+        <td>DirectX 12</td>
+      </tr>
+      <tr>
+        <td>Pantalla</td>
+        <td>800x600</td>
+        <td>1920x1080</td>
+      </tr>
+      <tr>
+        <td>Conexion a internet</td>
+        <td>Windows Update</td>
+        <td>WiFi o Ethernet</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>2. Crear USB booteable</h2>
+
+  <div class="paso">
+    <strong>Paso 1:</strong> Descarga la herramienta oficial de Microsoft: <strong>"Herramienta de creacion de medios"</strong> desde https://www.microsoft.com/es-es/software-download/windows10<br><br>
+    <strong>Paso 2:</strong> Inserta un USB de al menos 8 GB en tu computadora.<br><br>
+    <strong>Paso 3:</strong> Ejecuta la herramienta y acepta los terminos de licencia.<br><br>
+    <strong>Paso 4:</strong> Selecciona <strong>"Crear medios de instalacion para otro PC"</strong>.<br><br>
+    <strong>Paso 5:</strong> Elige el idioma, edicion y arquitectura (64 bits recomendado).<br><br>
+    <strong>Paso 6:</strong> Selecciona <strong>"Unidad flash USB"</strong> y elige tu USB.<br><br>
+    <strong>Paso 7:</strong> Espera a que se descargue e instale Windows en el USB. Esto puede tardar 20-40 minutos.
+  </div>
+
+  <div class="consejo">
+    <strong>Consejo:</strong> Usa un USB rapido (USB 3.0) para que la instalacion sea mas veloz. Todos los datos del USB se borraran.
+  </div>
+
+  <h2>3. Configurar BIOS/UEFI</h2>
+
+  <div class="paso">
+    <strong>Paso 8:</strong> Reinicia la PC y entra al BIOS presionando <strong>Supr</strong>, <strong>F2</strong> o <strong>F12</strong> (depende de tu placa madre).<br><br>
+    <strong>Paso 9:</strong> Ve a la pestaña <strong>"Boot"</strong> o <strong>"Arranque"</strong>.<br><br>
+    <strong>Paso 10:</strong> Cambia el orden de arranque y coloca el <strong>USB como primera opcion</strong>.<br><br>
+    <strong>Paso 11:</strong> Guarda los cambios y reinicia.
+  </div>
+
+  <div class="alerta">
+    <strong>IMPORTANTE:</strong> Si tu PC es nueva (con Windows 11), es posible que necesites desactivar <strong>Secure Boot</strong> y habilitar <strong>CSM/Legacy</strong> en el BIOS para instalar desde USB.
+  </div>
+
+  <h2>4. Instalar Windows</h2>
+
+  <div class="paso">
+    <strong>Paso 12:</strong> La PC arrancara desde el USB. Selecciona el idioma y haz clic en <strong>"Siguiente"</strong>.<br><br>
+    <strong>Paso 13:</strong> Haz clic en <strong>"Instalar ahora"</strong>.<br><br>
+    <strong>Paso 14:</strong> Ingresa la clave de producto (o haz clic en "No tengo clave de producto" si vas a activar despues).<br><br>
+    <strong>Paso 15:</strong> Selecciona la edicion de Windows que quieres instalar (Home o Pro).<br><br>
+    <strong>Paso 16:</strong> Acepta los terminos de licencia.<br><br>
+    <strong>Paso 17:</strong> Selecciona <strong>"Personalizada: instalar solo Windows"</strong>.<br><br>
+    <strong>Paso 18:</strong> Selecciona la particion donde quieres instalar (generalmente "Disco 0"). Si quieres una instalacion limpia, elimina todas las particiones y deja el espacio sin asignar.<br><br>
+    <strong>Paso 19:</strong> Haz clic en <strong>"Siguiente"</strong> y espera a que se instalen los archivos. La PC se reiniciara varias veces.
+  </div>
+
+  <h2>5. Configuracion inicial</h2>
+
+  <div class="paso">
+    <strong>Paso 20:</strong> Selecciona tu pais y zona horaria.<br><br>
+    <strong>Paso 21:</strong> Selecciona el metodo de teclado.<br><br>
+    <strong>Paso 22:</strong> Conectate a una red WiFi (si tienes).<br><br>
+    <strong>Paso 23:</strong> Configura una cuenta de usuario y contraseña.<br><br>
+    <strong>Paso 24:</strong> Acepta o rechaza la privacidad de datos.<br><br>
+    <strong>Paso 25:</strong> Espera a que Windows complete la configuracion. Esto toma unos minutos.
+  </div>
+
+  <h2>6. Despues de instalar</h2>
+
+  <div class="paso">
+    <strong>Paso 26:</strong> Ve a <strong>Configuracion > Actualizacion y seguridad > Windows Update</strong> y busca actualizaciones.<br><br>
+    <strong>Paso 27:</strong> Instala los drivers de tu tarjeta madre, tarjeta de video y demas componentes.<br><br>
+    <strong>Paso 28:</strong> Instala tus programas basicos (navegador, office, antivirus, etc.).<br><br>
+    <strong>Paso 29:</strong> Activa Windows con tu clave de producto.
+  </div>
+
+  <div class="consejo">
+    <strong>Tip:</strong> Despues de instalar todos los programas, crea un punto de restauracion del sistema para poder volver atras si algo sale mal.
+  </div>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Instalacion de Windows - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

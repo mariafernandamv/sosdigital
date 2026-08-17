@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Cables de PC - SOS DIGITAL</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 30px; color: #222; line-height: 1.7; }
+    h1 { text-align: center; color: #2c3e50; border-bottom: 3px solid #16a085; padding-bottom: 10px; }
+    h2 { color: #16a085; margin-top: 30px; border-left: 4px solid #16a085; padding-left: 10px; }
+    h3 { color: #1abc9c; margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+    th, td { border: 1px solid #bdc3c7; padding: 10px 14px; text-align: left; }
+    th { background-color: #16a085; color: white; }
+    tr:nth-child(even) { background-color: #e8f8f5; }
+    .paso { background: #e8f8f5; border-left: 4px solid #16a085; padding: 12px 16px; margin: 10px 0; border-radius: 4px; }
+    .paso strong { color: #2c3e50; }
+    .alerta { background: #fdedec; border-left: 4px solid #e74c3c; padding: 12px 16px; margin: 15px 0; border-radius: 4px; }
+    .alerta strong { color: #c0392b; }
+    .consejo { background: #eafaf1; border-left: 4px solid #27ae60; padding: 12px 16px; margin: 15px 0; border-radius: 4px; }
+    .consejo strong { color: #1e8449; }
+    ul, ol { padding-left: 25px; }
+    li { margin-bottom: 6px; }
+    .portada { text-align: center; margin: 60px 0 40px; }
+    .portada h1 { font-size: 2.2em; border: none; }
+    .portada p { font-size: 1.1em; color: #555; }
+    @media print { body { margin: 0; padding: 20px; } img { max-width: 500px !important; height: auto !important; } }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Cables de PC</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <h2>1. Tipos de cables de video</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Cable</th>
+        <th>Descripcion</th>
+        <th>Calidad</th>
+        <th>Uso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>VGA</strong></td>
+        <td>Analogico, conector azul de 15 pines</td>
+        <td>Baja (max 720p)</td>
+        <td>Monitores antiguos</td>
+      </tr>
+      <tr>
+        <td><strong>DVI</strong></td>
+        <td>Digital, conector blanco</td>
+        <td>Media (1080p)</td>
+        <td>Monitores semi-antiguos</td>
+      </tr>
+      <tr>
+        <td><strong>HDMI</strong></td>
+        <td>Digital, conector delgado y metalico</td>
+        <td>Alta (4K)</td>
+        <td>Monitores modernos, TV, proyectores</td>
+      </tr>
+      <tr>
+        <td><strong>DisplayPort</strong></td>
+        <td>Digital, conector con esquina cortada</td>
+        <td>Muy alta (8K, 144Hz)</td>
+        <td>Monitores gaming profesionales</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="consejo">
+    <strong>Consejo:</strong> Si tu monitor y tarjeta de video lo permiten, usa DisplayPort para la mejor calidad y tasa de refresco. HDMI es la segunda mejor opcion.
+  </div>
+
+  <h2>2. Tipos de cables de datos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Cable</th>
+        <th>Velocidad</th>
+        <th>Uso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>SATA</strong></td>
+        <td>6 Gbps</td>
+        <td>Discos duros y SSD internos</td>
+      </tr>
+      <tr>
+        <td><strong>NVMe M.2</strong></td>
+        <td>32 Gbps (PCIe 4.0)</td>
+        <td>SSD rapidos (se instalan directo en la tarjeta madre)</td>
+      </tr>
+      <tr>
+        <td><strong>USB 2.0</strong></td>
+        <td>480 Mbps</td>
+        <td>Teclados, mouse, dispositivos basicos</td>
+      </tr>
+      <tr>
+        <td><strong>USB 3.0</strong></td>
+        <td>5 Gbps</td>
+        <td>Discos externos, memorias USB rapidas</td>
+      </tr>
+      <tr>
+        <td><strong>USB 3.1/3.2</strong></td>
+        <td>10-20 Gbps</td>
+        <td>Discos externos SSD, dispositivos rapidos</td>
+      </tr>
+      <tr>
+        <td><strong>USB-C</strong></td>
+        <td>Hasta 40 Gbps (Thunderbolt)</td>
+        <td>Dispositivos modernos, carga rapida</td>
+      </tr>
+      <tr>
+        <td><strong>eSATA</strong></td>
+        <td>6 Gbps</td>
+        <td>Discos externos (poco comun hoy)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Cables de alimentacion</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Cable</th>
+        <th>Conexion</th>
+        <th>Uso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Cable de corriente (IEC C13)</strong></td>
+        <td>Fuente de poder a toma de corriente</td>
+        <td>Alimentar la PC</td>
+      </tr>
+      <tr>
+        <td><strong>SATA Power</strong></td>
+        <td>Fuente a disco duro/SSD/ventiladores</td>
+        <td>Alimentar componentes internos</td>
+      </tr>
+      <tr>
+        <td><strong>PCIe Power (6/8 pines)</strong></td>
+        <td>Fuente a tarjeta de video</td>
+        <td>Alimentar GPUs de alto rendimiento</td>
+      </tr>
+      <tr>
+        <td><strong>EPS (4/8 pines)</strong></td>
+        <td>Fuente a tarjeta madre</td>
+        <td>Alimentar el procesador</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Cables de conexion interna</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Cable</th>
+        <th>Funcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Cable front panel (F_PANEL)</strong></td>
+        <td>Conecta botones del gabinete (power, reset) y LED a la tarjeta madre</td>
+      </tr>
+      <tr>
+        <td><strong>Cable USB frontal</strong></td>
+        <td>Conecta puertos USB delanteros del gabinete a la tarjeta madre</td>
+      </tr>
+      <tr>
+        <td><strong>Cable HD Audio</strong></td>
+        <td>Conecta puertos de audio delanteros (auriculares/microfono)</td>
+      </tr>
+      <tr>
+        <td><strong>SATA Data</strong></td>
+        <td>Conecta discos duros/SSD a la tarjeta madre</td>
+      </tr>
+      <tr>
+        <td><strong>Cable ventiladores (3/4 pines)</strong></td>
+        <td>Alimenta y controla los ventiladores del gabinete</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>5. Cables de red y audio</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Cable</th>
+        <th>Uso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Cable Ethernet (RJ45)</strong></td>
+        <td>Conexion a internet cableada</td>
+      </tr>
+      <tr>
+        <td><strong>Cable de auriculares (3.5mm)</strong></td>
+        <td>Conectar auriculares o parlantes</td>
+      </tr>
+      <tr>
+        <td><strong>Cable auxiliar (AUX)</strong></td>
+        <td>Conexion de audio analogico</td>
+      </tr>
+      <tr>
+        <td><strong>Cable optical (S/PDIF)</strong></td>
+        <td>Audio digital de alta calidad</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6. Cables externos (perifericos)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Cable</th>
+        <th>Dispositivo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>USB-A</strong></td>
+        <td>Teclado, mouse, impresora, memoria USB</td>
+      </tr>
+      <tr>
+        <td><strong>USB-C</strong></td>
+        <td>Celulares, tablets, discos externos modernos</td>
+      </tr>
+      <tr>
+        <td><strong>HDMI</strong></td>
+        <td>Monitor, TV, proyector</td>
+      </tr>
+      <tr>
+        <td><strong>DisplayPort</strong></td>
+        <td>Monitor gaming, profesional</td>
+      </tr>
+      <tr>
+        <td><strong>PS/2</strong></td>
+        <td>Teclados y mouse antiguos (poco comun)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>7. Cómo identificar cada cable</h2>
+
+  <div class="paso">
+    <strong>Consejos para identificar cables:</strong><br><br>
+    <strong>1. VGA:</strong> Conector azul, tornillos laterales, 15 pines.<br><br>
+    <strong>2. DVI:</strong> Conector blanco, tornillos laterales, mas ancho que VGA.<br><br>
+    <strong>3. HDMI:</strong> Conector delgado, metalico, sin tornillos.<br><br>
+    <strong>4. DisplayPort:</strong> Similar a HDMI pero con esquina cortada y un seguro.<br><br>
+    <strong>5. USB:</strong> Rectangular (USB-A) o ovalado (USB-C).<br><br>
+    <strong>6. SATA:</strong> Conector L形 pequeno y delgado.<br><br>
+    <strong>7. Ethernet (RJ45):** Conector transparente, similar a telefono pero mas ancho.
+  </div>
+
+  <h2>8. Solucion de problemas con cables</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Problema</th>
+        <th>Causa probable</th>
+        <th>Solucion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>No hay imagen en el monitor</td>
+        <td>Cable suelto o puerto incorrecto</td>
+        <td>Verificar conexion, usar puerto correcto</td>
+      </tr>
+      <tr>
+        <td>No reconoce el USB</td>
+        <td>Cable danado o puerto muerto</td>
+        <td>Probar otro puerto, probar otro cable</td>
+      </tr>
+      <tr>
+        <td>Internet no funciona</td>
+        <td>Cable Ethernet flojo o danado</td>
+        <td>Reconectar con "click", probar otro cable</td>
+      </tr>
+      <tr>
+        <td>No hay sonido</td>
+        <td>Cable de audio en puerto incorrecto</td>
+        <td>Conectar al puerto verde (line-out)</td>
+      </tr>
+      <tr>
+        <td>Disco no se detecta</td>
+        <td>Cable SATA suelto o fuente sin conectar</td>
+        <td>Verificar ambos cables (datos y alimentacion)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="consejo">
+    <strong>Tip:</strong> Siempre compra cables de buena calidad. Un cable barato puede causar perdida de senal, calentamiento o incluso danar componentes.
+  </div>
+
+  <h2>9. Longitudes maximas recomendadas</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo de cable</th>
+        <th>Longitud maxima</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Ethernet (Cat5e/Cat6)</strong></td>
+        <td>100 metros</td>
+      </tr>
+      <tr>
+        <td><strong>HDMI</strong></td>
+        <td>15 metros (sin repetidor)</td>
+      </tr>
+      <tr>
+        <td><strong>USB 2.0</strong></td>
+        <td>5 metros</td>
+      </tr>
+      <tr>
+        <td><strong>USB 3.0</strong></td>
+        <td>3 metros</td>
+      </tr>
+      <tr>
+        <td><strong>DisplayPort</strong></td>
+        <td>3 metros (sin repetidor)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alerta">
+    <strong>IMPORTANTE:</strong> Si necesitas cables largos, usa cables activos o repetidores de senal para evitar perdida de calidad.
+  </div>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Cables de PC - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

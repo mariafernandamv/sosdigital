@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Python - SOS DIGITAL</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 30px; color: #222; line-height: 1.7; }
+    h1 { text-align: center; color: #2c3e50; border-bottom: 3px solid #27ae60; padding-bottom: 10px; }
+    h2 { color: #27ae60; margin-top: 30px; border-left: 4px solid #27ae60; padding-left: 10px; }
+    h3 { color: #1e8449; margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+    th, td { border: 1px solid #bdc3c7; padding: 10px 14px; text-align: left; }
+    th { background-color: #27ae60; color: white; }
+    tr:nth-child(even) { background-color: #eafaf1; }
+    .paso { background: #eafaf1; border-left: 4px solid #27ae60; padding: 12px 16px; margin: 10px 0; border-radius: 4px; }
+    .paso strong { color: #2c3e50; }
+    .alerta { background: #fdedec; border-left: 4px solid #e74c3c; padding: 12px 16px; margin: 15px 0; border-radius: 4px; }
+    .alerta strong { color: #c0392b; }
+    .consejo { background: #eafaf1; border-left: 4px solid #27ae60; padding: 12px 16px; margin: 15px 0; border-radius: 4px; }
+    .consejo strong { color: #1e8449; }
+    ul, ol { padding-left: 25px; }
+    li { margin-bottom: 6px; }
+    .portada { text-align: center; margin: 60px 0 40px; }
+    .portada h1 { font-size: 2.2em; border: none; }
+    .portada p { font-size: 1.1em; color: #555; }
+    pre { background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 6px; overflow-x: auto; font-size: 0.95em; }
+    code { background: #eafaf1; padding: 2px 6px; border-radius: 3px; font-size: 0.95em; }
+    @media print { body { margin: 0; padding: 20px; } pre { background: #f5f5f5; color: #222; } img { max-width: 500px !important; height: auto !important; } }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Python</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <h2>1. Que es Python</h2>
+  <p>Python es un lenguaje de programacion de alto nivel, facil de aprender y muy versatil. Se usa para:</p>
+  <ul>
+    <li><strong>Desarrollo web</strong> (Django, Flask)</li>
+    <li><strong>Ciencia de datos</strong> (Pandas, NumPy)</li>
+    <li><strong>Inteligencia artificial</strong> (TensorFlow, PyTorch)</li>
+    <li><strong>Automatizacion</strong> (scripts, bots)</li>
+    <li><strong>Aplicaciones de escritorio</strong></li>
+    <li><strong>Videojuegos</strong> (Pygame)</li>
+  </ul>
+
+  <div class="consejo">
+    <strong>Por que Python?</strong> Es el lenguaje mas recomendado para principiantes porque su sintaxis es clara y se parece al ingles. Tambien es uno de los mas demandados en el mercado laboral.
+  </div>
+
+  <h2>2. Instalar Python</h2>
+
+  <div class="paso">
+    <strong>Paso 1:</strong> Ve a https://www.python.org/downloads/<br><br>
+    <strong>Paso 2:</strong> Haz clic en <strong>"Download Python 3.x.x"</strong> (la version mas reciente).<br><br>
+    <strong>Paso 3:</strong> Ejecuta el instalador.<br><br>
+    <strong>Paso 4:</strong> MARCA la casilla <strong>"Add Python to PATH"</strong> (MUY IMPORTANTE).<br><br>
+    <strong>Paso 5:</strong> Haz clic en <strong>"Install Now"</strong>.<br><br>
+    <strong>Paso 6:</strong> Espera a que termine la instalacion.
+  </div>
+
+  <div class="alerta">
+    <strong>IMPORTANTE:</strong> Si olvidas marcar "Add Python to PATH", no podras usar Python desde la terminal. Puedes reinstalarlo y marcar la casilla.
+  </div>
+
+  <h2>3. Verificar la instalacion</h2>
+
+  <div class="paso">
+    <strong>Paso 7:</strong> Abre la terminal (cmd o PowerShell).<br><br>
+    <strong>Paso 8:</strong> Escribe: <code>python --version</code><br><br>
+    <strong>Paso 9:</strong> Presiona Enter. Deberia aparecer la version de Python instalada (ej: Python 3.12.0).
+  </div>
+
+  <h2>4. El interprete de Python</h2>
+
+  <p>Python tiene dos formas de ejecutar codigo:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Modo</th>
+        <th>Descripcion</th>
+        <th>Como usarlo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Modo interactivo</strong></td>
+        <td>Ejecutas codigo linea por linea</td>
+        <td>Escribe <code>python</code> en la terminal</td>
+      </tr>
+      <tr>
+        <td><strong>Modo script</strong></td>
+        <td>Ejecutas un archivo completo</td>
+        <td><code>python archivo.py</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="paso">
+    <strong>Prueba el modo interactivo:</strong><br>
+    <pre>python
+>>> print("Hola, mundo!")
+Hola, mundo!
+>>> 2 + 2
+4
+>>> exit()</pre>
+  </div>
+
+  <h2>5. Tu primer programa</h2>
+
+  <p>Crea un archivo llamado <code>hola.py</code> con el siguiente codigo:</p>
+
+  <pre># Mi primer programa en Python
+print("Hola, mundo!")
+print("Estoy aprendiendo Python")
+print("2 + 2 =", 2 + 2)</pre>
+
+  <div class="paso">
+    <strong>Ejecutalo:</strong> Abre la terminal y escribe: <code>python hola.py</code>
+  </div>
+
+  <h2>6. Variables y tipos de datos</h2>
+
+  <pre># Variables
+nombre = "Juan"
+edad = 17
+estatura = 1.65
+es_estudiante = True
+
+# Mostrar variables
+print("Nombre:", nombre)
+print("Edad:", edad)
+print("Estatura:", estatura)
+print("Es estudiante:", es_estudiante)
+
+# Tipo de dato
+print(type(nombre))      # str
+print(type(edad))        # int
+print(type(estatura))    # float
+print(type(es_estudiante)) # bool</pre>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Descripcion</th>
+        <th>Ejemplo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>str</strong></td>
+        <td>Cadena de texto</td>
+        <td><code>"Hola"</code></td>
+      </tr>
+      <tr>
+        <td><strong>int</strong></td>
+        <td>Numero entero</td>
+        <td><code>25</code></td>
+      </tr>
+      <tr>
+        <td><strong>float</strong></td>
+        <td>Numero decimal</td>
+        <td><code>3.14</code></td>
+      </tr>
+      <tr>
+        <td><strong>bool</strong></td>
+        <td>Verdadero o falso</td>
+        <td><code>True</code> / <code>False</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>7. Operaciones basicas</h2>
+
+  <pre># Aritmeticas
+print(10 + 5)    # 15 (suma)
+print(10 - 5)    # 5 (resta)
+print(10 * 5)    # 50 (multiplicacion)
+print(10 / 3)    # 3.333 (division)
+print(10 // 3)   # 3 (division entera)
+print(10 % 3)    # 1 (modulo/resto)
+print(2 ** 3)    # 8 (potencia)
+
+# Comparacion
+print(5 > 3)     # True
+print(5 == 5)    # True
+print(5 != 3)    # True</pre>
+
+  <h2>8. Entrada de datos</h2>
+
+  <pre># Pedir datos al usuario
+nombre = input("Cual es tu nombre? ")
+edad = int(input("Cuantos anos tienes? "))
+
+print("Hola", nombre, "tienes", edad, "anos")
+
+# Operacion con datos
+ano_nacimiento = 2026 - edad
+print("Naciste alrededor del ano:", ano_nacimiento)</pre>
+
+  <h2>9. Condicionales</h2>
+
+  <pre># If / elif / else
+edad = int(input("Cuantos anos tienes? "))
+
+if edad >= 18:
+    print("Eres mayor de edad")
+elif edad >= 13:
+    print("Eres adolescente")
+else:
+    print("Eres menor de edad")</pre>
+
+  <h2>10. Bucles</h2>
+
+  <h3>Bucle for</h3>
+  <pre># Contar del 1 al 5
+for i in range(1, 6):
+    print(i)
+
+# Recorrer una lista
+frutas = ["manzana", "platano", "naranja"]
+for fruta in frutas:
+    print("Me gusta la", fruta)</pre>
+
+  <h3>Bucle while</h3>
+  <pre># Contar mientras sea menor a 5
+contador = 0
+while contador < 5:
+    print("Contador:", contador)
+    contador += 1</pre>
+
+  <h2>11. Listas</h2>
+
+  <pre># Crear una lista
+numeros = [1, 2, 3, 4, 5]
+nombres = ["Ana", "Luis", "Carlos"]
+
+# Acceder a un elemento
+print(numeros[0])    # 1 (primera posicion)
+print(nombres[-1])   # Carlos (ultima posicion)
+
+# Agregar elementos
+numeros.append(6)
+nombres.append("Maria")
+
+# Eliminar elementos
+numeros.remove(3)
+
+# Longitud de la lista
+print(len(numeros))  # 5</pre>
+
+  <h2>12. Funciones</h2>
+
+  <pre># Definir una funcion
+def saludar(nombre):
+    print("Hola", nombre, "!")
+
+# Llamar a la funcion
+saludar("Juan")
+saludar("Ana")
+
+# Funcion con retorno
+def sumar(a, b):
+    return a + b
+
+resultado = sumar(5, 3)
+print("5 + 3 =", resultado)</pre>
+
+  <h2>13. Ejercicio practico</h2>
+
+  <pre># Calculadora basica
+print("=== CALCULADORA ===")
+print("1. Sumar")
+print("2. Restar")
+print("3. Multiplicar")
+print("4. Dividir")
+
+opcion = input("Elige una operacion (1-4): ")
+num1 = float(input("Primer numero: "))
+num2 = float(input("Segundo numero: "))
+
+if opcion == "1":
+    print("Resultado:", num1 + num2)
+elif opcion == "2":
+    print("Resultado:", num1 - num2)
+elif opcion == "3":
+    print("Resultado:", num1 * num2)
+elif opcion == "4":
+    if num2 != 0:
+        print("Resultado:", num1 / num2)
+    else:
+        print("Error: No se puede dividir por cero")
+else:
+    print("Opcion no valida")</pre>
+
+  <div class="consejo">
+    <strong>Siguiente paso:</strong> Practica con ejercicios en https://www.python.org/moin/BeginnersGuide/Exercises
+  </div>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Python - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Redes - SOS DIGITAL</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 30px; color: #222; line-height: 1.7; }
+    h1 { text-align: center; color: #2c3e50; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+    h2 { color: #e67e22; margin-top: 30px; border-left: 4px solid #e67e22; padding-left: 10px; }
+    h3 { color: #d35400; margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+    th, td { border: 1px solid #bdc3c7; padding: 10px 14px; text-align: left; }
+    th { background-color: #e67e22; color: white; }
+    tr:nth-child(even) { background-color: #fdf2e9; }
+    .paso { background: #fdf2e9; border-left: 4px solid #e67e22; padding: 12px 16px; margin: 10px 0; border-radius: 4px; }
+    .paso strong { color: #2c3e50; }
+    .alerta { background: #fdedec; border-left: 4px solid #e74c3c; padding: 12px 16px; margin: 15px 0; border-radius: 4px; }
+    .alerta strong { color: #c0392b; }
+    .consejo { background: #eafaf1; border-left: 4px solid #27ae60; padding: 12px 16px; margin: 15px 0; border-radius: 4px; }
+    .consejo strong { color: #1e8449; }
+    ul, ol { padding-left: 25px; }
+    li { margin-bottom: 6px; }
+    .portada { text-align: center; margin: 60px 0 40px; }
+    .portada h1 { font-size: 2.2em; border: none; }
+    .portada p { font-size: 1.1em; color: #555; }
+    pre { background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 6px; overflow-x: auto; font-size: 0.95em; }
+    code { background: #fdf2e9; padding: 2px 6px; border-radius: 3px; font-size: 0.95em; }
+    @media print { body { margin: 0; padding: 20px; } img { max-width: 500px !important; height: auto !important; } }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Redes</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <h2>1. Que es una red</h2>
+  <p>Una red de computadoras es un conjunto de dispositivos (PCs, servidores, impresoras, etc.) conectados entre si para compartir recursos, datos y servicios.</p>
+
+  <h2>2. Tipos de red por alcance</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Siglas</th>
+        <th>Alcance</th>
+        <th>Ejemplo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Red Personal</strong></td>
+        <td>PAN</td>
+        <td>1-10 metros</td>
+        <td>Bluetooth, auriculares inalambricos</td>
+      </tr>
+      <tr>
+        <td><strong>Red de Area Local</strong></td>
+        <td>LAN</td>
+        <td>Edificio o campus</td>
+        <td>Red de la escuela, red de una oficina</td>
+      </tr>
+      <tr>
+        <td><strong>Red de Area Metropolitana</strong></td>
+        <td>MAN</td>
+        <td>Ciudad</td>
+        <td>Red de una universidad con varios campus</td>
+      </tr>
+      <tr>
+        <td><strong>Red de Area Amplia</strong></td>
+        <td>WAN</td>
+        <td>Paises o continentes</td>
+        <td>Internet</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Tipos de red por conexion</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Descripcion</th>
+        <th>Velocidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Red cableada (Ethernet)</strong></td>
+        <td>Usa cables UTP/STP para conectar dispositivos</td>
+        <td>100 Mbps a 10 Gbps</td>
+      </tr>
+      <tr>
+        <td><strong>Red inalambrica (WiFi)</strong></td>
+        <td>Usa ondas de radio para transmitir datos</td>
+        <td>54 Mbps a 9.6 Gbps (WiFi 6)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Componentes de una red</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Componente</th>
+        <th>Funcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Router</strong></td>
+        <td>Conecta la red local con internet y dirige el trafico</td>
+      </tr>
+      <tr>
+        <td><strong>Switch</strong></td>
+        <td>Conecta varios dispositivos en la red local</td>
+      </tr>
+      <tr>
+        <td><strong>Modem</strong></td>
+        <td>Convierte la senal del ISP a senal de red</td>
+      </tr>
+      <tr>
+        <td><strong>Tarjeta de red</strong></td>
+        <td>Permite al dispositivo conectarse a la red</td>
+      </tr>
+      <tr>
+        <td><strong>Cable UTP</strong></td>
+        <td>Conexion fisica entre dispositivos</td>
+      </tr>
+      <tr>
+        <td><strong>Access Point</strong></td>
+        <td>Proporciona conexion WiFi</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>5. Direccion IP</h2>
+
+  <p>La <strong>direccion IP</strong> es como la "direccion postal" de un dispositivo en la red. Identifica cada dispositivo unico.</p>
+
+  <h3>IPv4</h3>
+  <ul>
+    <li>Formato: <code>192.168.1.100</code></li>
+    <li>4 octetos separados por puntos</li>
+    <li>Cada octeto va de 0 a 255</li>
+    <li>Permite约4 mil millones de dispositivos</li>
+  </ul>
+
+  <h3>IPv6</h3>
+  <ul>
+    <li>Formato: <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code></li>
+    <li>Usa hexadecimal</li>
+    <li>Permite约340 undecillones de dispositivos</li>
+  </ul>
+
+  <h3>Direcciones IP privadas</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Rango</th>
+        <th>Clase</th>
+        <th>Uso comun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>192.168.x.x</code></td>
+        <td>C</td>
+        <td>Redes domes y pequenas oficinas</td>
+      </tr>
+      <tr>
+        <td><code>10.x.x.x</code></td>
+        <td>A</td>
+        <td>Redes grandes empresas</td>
+      </tr>
+      <tr>
+        <td><code>172.16.x.x - 172.31.x.x</code></td>
+        <td>B</td>
+        <td>Redes medianas</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6. Comandos de red</h2>
+
+  <h3>Windows</h3>
+  <pre># Ver configuracion de red
+ipconfig
+
+# Ver configuracion detallada
+ipconfig /all
+
+# Ping a un servidor
+ping google.com
+
+# Ruta de red
+tracert google.com
+
+# Limpiar cache DNS
+ipconfig /flushdns
+
+# Ver conexiones activas
+netstat -an</pre>
+
+  <h3>Linux/Mac</h3>
+  <pre># Ver configuracion de red
+ip addr show
+
+# Ping a un servidor
+ping google.com
+
+# Ruta de red
+traceroute google.com
+
+# Ver conexiones activas
+netstat -tuln
+
+# Resolver DNS
+nslookup google.com</pre>
+
+  <h2>7. Puertos y protocolos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Protocolo</th>
+        <th>Puerto</th>
+        <th>Funcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>HTTP</strong></td>
+        <td>80</td>
+        <td>Paginas web (sin cifrar)</td>
+      </tr>
+      <tr>
+        <td><strong>HTTPS</strong></td>
+        <td>443</td>
+        <td>Paginas web (cifradas)</td>
+      </tr>
+      <tr>
+        <td><strong>FTP</strong></td>
+        <td>21</td>
+        <td>Transferencia de archivos</td>
+      </tr>
+      <tr>
+        <td><strong>SSH</strong></td>
+        <td>22</td>
+        <td>Acceso remoto seguro</td>
+      </tr>
+      <tr>
+        <td><strong>SMTP</strong></td>
+        <td>25</td>
+        <td>Envio de correos</td>
+      </tr>
+      <tr>
+        <td><strong>DNS</strong></td>
+        <td>53</td>
+        <td>Resolucion de nombres</td>
+      </tr>
+      <tr>
+        <td><strong>DHCP</strong></td>
+        <td>67/68</td>
+        <td>Asignacion automatica de IP</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>8. Configurar una red basica</h2>
+
+  <div class="paso">
+    <strong>Paso 1:</strong> Conecta el cable Ethernet del router a la PC.<br><br>
+    <strong>Paso 2:</strong> Ve a <strong>Configuracion > Red e Internet > Estado > Cambiar opciones de adaptador</strong>.<br><br>
+    <strong>Paso 3:</strong> Haz clic derecho en <strong>"Ethernet"</strong> y selecciona <strong>"Propiedades"</strong>.<br><br>
+    <strong>Paso 4:</strong> Selecciona <strong>"Protocolo de Internet version 4 (TCP/IPv4)"</strong> y haz clic en "Propiedades".<br><br>
+    <strong>Paso 5:</strong> Para configuracion automatica, selecciona <strong>"Obtener direccion IP automaticamente"</strong>.<br><br>
+    <strong>Paso 6:</strong> Para configuracion manual, ingresa la IP, mascara de subred y gateway.
+  </div>
+
+  <h2>9. Wifi: Configuracion y seguridad</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Seguridad</th>
+        <th>Nivel</th>
+        <th>Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Sin contrasena</strong></td>
+        <td>Ninguno</td>
+        <td>Cualquiera puede conectarse (NO recomendado)</td>
+      </tr>
+      <tr>
+        <td><strong>WEP</strong></td>
+        <td>Bajo</td>
+        <td>Seguridad antigua, facil de hackear</td>
+      </tr>
+      <tr>
+        <td><strong>WPA</strong></td>
+        <td>Medio</td>
+        <td>Mejor que WEP pero tambien vulnerable</td>
+      </tr>
+      <tr>
+        <td><strong>WPA2</strong></td>
+        <td>Alto</td>
+        <td>Seguro y recomendado para la mayoria</td>
+      </tr>
+      <tr>
+        <td><strong>WPA3</strong></td>
+        <td>Muy alto</td>
+        <td>La mas segura actualmente</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="consejo">
+    <strong>Consejos de seguridad WiFi:</strong><br>
+    - Usa WPA2 o WPA3 como minimo.<br>
+    - Cambia la contrasena por defecto del router.<br>
+    - Cambia el nombre de red (SSID) por defecto.<br>
+    - Desactiva WPS si no lo usas.<br>
+    - Actualiza el firmware del router regularmente.
+  </div>
+
+  <h2>10. Problemas comunes de red</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Problema</th>
+        <th>Causa</th>
+        <th>Solucion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>No hay conexion a internet</td>
+        <td>Cable suelto, router apagado, ISP con problemas</td>
+        <td>Verificar conexiones, reiniciar router</td>
+      </tr>
+      <tr>
+        <td>Conexion lenta</td>
+        <td>Muchas dispositivos, interferencia, router antiguo</td>
+        <td>Desconectar dispositivos, cambiar canal WiFi</td>
+      </tr>
+      <tr>
+        <td>No obtiene IP</td>
+        <td>DHCP desactivado, conflicto de IP</td>
+        <td>Reiniciar adaptador de red, configurar IP manual</td>
+      </tr>
+      <tr>
+        <td>Se desconecta frecuentemente</td>
+        <td>Señal debil, driver desactualizado</td>
+        <td>Acercarse al router, actualizar driver de red</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Redes - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

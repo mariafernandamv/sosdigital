@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Mantenimiento de PC - SOS DIGITAL</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 30px; color: #222; line-height: 1.7; }
+    h1 { text-align: center; color: #2c3e50; border-bottom: 3px solid #8e44ad; padding-bottom: 10px; }
+    h2 { color: #8e44ad; margin-top: 30px; border-left: 4px solid #8e44ad; padding-left: 10px; }
+    h3 { color: #7d3c98; margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+    th, td { border: 1px solid #bdc3c7; padding: 10px 14px; text-align: left; }
+    th { background-color: #8e44ad; color: white; }
+    tr:nth-child(even) { background-color: #f4ecf7; }
+    .paso { background: #f4ecf7; border-left: 4px solid #8e44ad; padding: 12px 16px; margin: 10px 0; border-radius: 4px; }
+    .paso strong { color: #2c3e50; }
+    .alerta { background: #fdedec; border-left: 4px solid #e74c3c; padding: 12px 16px; margin: 15px 0; border-radius: 4px; }
+    .alerta strong { color: #c0392b; }
+    .consejo { background: #eafaf1; border-left: 4px solid #27ae60; padding: 12px 16px; margin: 15px 0; border-radius: 4px; }
+    .consejo strong { color: #1e8449; }
+    ul, ol { padding-left: 25px; }
+    li { margin-bottom: 6px; }
+    .portada { text-align: center; margin: 60px 0 40px; }
+    .portada h1 { font-size: 2.2em; border: none; }
+    .portada p { font-size: 1.1em; color: #555; }
+    @media print { body { margin: 0; padding: 20px; } img { max-width: 500px !important; height: auto !important; } }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Mantenimiento de PC</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <h2>1. Que es el mantenimiento</h2>
+  <p>El mantenimiento de PC es el conjunto de acciones preventivas y correctivas que se realizan para mantener la computadora en optimas condiciones de funcionamiento, prolongar su vida util y evitar problemas.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Descripcion</th>
+        <th>Frecuencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Preventivo</strong></td>
+        <td>Acciones para prevenir problemas (limpieza, actualizaciones)</td>
+        <td>Cada 3-6 meses</td>
+      </tr>
+      <tr>
+        <td><strong>Correctivo</strong></td>
+        <td>Reparar componentes o software que falla</td>
+        <td>Cuando ocurre un problema</td>
+      </tr>
+      <tr>
+        <td><strong>Predictivo</strong></td>
+        <td>Monitorear componentes para anticipar fallos</td>
+        <td>Continuo</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>2. Herramientas necesarias</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Herramienta</th>
+        <th>Uso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Desarmadores (Phillips y plano)</strong></td>
+        <td>Abrir el gabinete y componentes</td>
+      </tr>
+      <tr>
+        <td><strong>Aire comprimido</strong></td>
+        <td>Limpiar polvo de componentes</td>
+      </tr>
+      <tr>
+        <td><strong>Brocha suave</strong></td>
+        <td>Limpiar polvo delicado</td>
+      </tr>
+      <tr>
+        <td><strong>Pasta termica</strong></td>
+        <td>Cambiar pasta del procesador</td>
+      </tr>
+      <tr>
+        <td><strong>Paño de microfibra</strong></td>
+        <td>Limpiar pantallas y superficies</td>
+      </tr>
+      <tr>
+        <td><strong>Alcohol isopropilico</strong></td>
+        <td>Limpiar contactos y componentes</td>
+      </tr>
+      <tr>
+        <td><strong>Pulsera antiestatica</strong></td>
+        <td>Evitar descargas electricas</td>
+      </tr>
+      <tr>
+        <td><strong>USB booteable</strong></td>
+        <td>Reparar o reinstalar Windows</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Mantenimiento preventivo (Fisico)</h2>
+
+  <h3>Limpieza externa</h3>
+  <div class="paso">
+    <strong>Paso 1:</strong> Apaga la PC y desconecta todos los cables.<br><br>
+    <strong>Paso 2:</strong> Usa paño de microfibra humedecido para limpiar el gabinete, monitor y teclado.<br><br>
+    <strong>Paso 3:</strong> Usa aire comprimido para limpiar entre las teclas.<br><br>
+    <strong>Paso 4:</strong> Limpia el mouse con alcohol isopropilico.
+  </div>
+
+  <h3>Limpieza interna</h3>
+  <div class="paso">
+    <strong>Paso 5:</strong> Pon la pulsera antiestatica o toca una superficie metalica.<br><br>
+    <strong>Paso 6:</strong> Abre el gabinete (desatornillar los tornillos laterales).<br><br>
+    <strong>Paso 7:</strong> Usa aire comprimido para soplar el polvo de:<br>
+    - Ventiladores (CPU, gabinete, tarjeta de video)<br>
+    - Disipadores de calor<br>
+    - Fuentes de poder<br>
+    - Ranuras de expansion<br><br>
+    <strong>Paso 8:</strong> Usa la brocha suave para componentes delicados.<br><br>
+    <strong>Paso 9:</strong> Cierra el gabinete y reconecta los cables.
+  </div>
+
+  <div class="alerta">
+    <strong>CUIDADO:</strong> NUNCA uses una aspiradora dentro del gabinete. La electricidad estatica puede danar los componentes. Usa aire comprimido o brocha.
+  </div>
+
+  <h2>4. Mantenimiento preventivo (Software)</h2>
+
+  <div class="paso">
+    <strong>Paso 10:</strong> Actualiza Windows: <strong>Configuracion > Windows Update > Buscar actualizaciones</strong>.<br><br>
+    <strong>Paso 11:</strong> Actualiza los drivers (verificar fabricante).<br><br>
+    <strong>Paso 12:</strong> Desinstala programas que no usas.<br><br>
+    <strong>Paso 13:</strong> Limpia archivos temporales (cleanmgr).<br><br>
+    <strong>Paso 14:</strong> Escanea con el antivirus.<br><br>
+    <strong>Paso 15:</strong> Desfragmenta el disco HDD (NO SSD).<br><br>
+    <strong>Paso 16:</strong> Crea un punto de restauracion del sistema.
+  </div>
+
+  <h2>5. Cambiar pasta termica</h2>
+
+  <div class="paso">
+    <strong>Paso 17:</strong> Apaga la PC y desconecta todos los cables.<br><br>
+    <strong>Paso 18:</strong> Abre el gabinete y retira el ventilador del procesador.<br><br>
+    <strong>Paso 19:</strong> Limpia la pasta vieja con alcohol isopropilico y un paño sin pelusa.<br><br>
+    <strong>Paso 20:</strong> Aplica una cantidad pequena de pasta nueva (tamaño de un grano de arroz) en el centro del procesador.<br><br>
+    <strong>Paso 21:</strong> Vuelve a colocar el ventilador y aprieta uniformemente.<br><br>
+    <strong>Paso 22:</strong> Reconecta el ventilador a la tarjeta madre (conector CPU_FAN).
+  </div>
+
+  <h2>6. Cambiar componentes</h2>
+
+  <h3>Instalar memoria RAM</h3>
+  <div class="paso">
+    <strong>Paso 23:</strong> Apaga la PC y abre el gabinete.<br><br>
+    <strong>Paso 24:</strong> Localiza las ranuras DIMM en la tarjeta madre.<br><br>
+    <strong>Paso 25:</strong> Abre los seguros de la ranura.<br><br>
+    <strong>Paso 26:</strong> Inserta el modulo RAM alineando la muesca.<br><br>
+    <strong>Paso 27:</strong> Presiona firmemente hasta que los seguros cierren.
+  </div>
+
+  <h3>Instalar disco duro SSD</h3>
+  <div class="paso">
+    <strong>Paso 28:</strong> Localiza la bahia de discos en el gabinete.<br><br>
+    <strong>Paso 29:</strong> Fija el SSD con tornillos o soporte adhesivo.<br><br>
+    <strong>Paso 30:</strong> Conecta el cable SATA al SSD y a la tarjeta madre.<br><br>
+    <strong>Paso 31:</strong> Conecta el cable de alimentacion SATA.
+  </div>
+
+  <h2>7. Monitoreo del estado</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Herramienta</th>
+        <th>Que monitorea</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>HWMonitor</strong></td>
+        <td>Temperaturas, voltajes, ventiladores</td>
+      </tr>
+      <tr>
+        <td><strong>CrystalDiskInfo</strong></td>
+        <td>Salud del disco duro/SSD</td>
+      </tr>
+      <tr>
+        <td><strong>MemTest86</strong></td>
+        <td>Errores en la memoria RAM</td>
+      </tr>
+      <tr>
+        <td><strong>FurMark</strong></td>
+        <td>Estres y temperatura de la GPU</td>
+      </tr>
+      <tr>
+        <td><strong>Core Temp</strong></td>
+        <td>Temperatura del procesador</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Temperaturas seguras</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Componente</th>
+        <th>Normal</th>
+        <th>Peligro</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Procesador</strong></td>
+        <td>30°C - 70°C</td>
+        <td>Mayor a 85°C</td>
+      </tr>
+      <tr>
+        <td><strong>Tarjeta de video</strong></td>
+        <td>30°C - 80°C</td>
+        <td>Mayor a 95°C</td>
+      </tr>
+      <tr>
+        <td><strong>Disco duro</strong></td>
+        <td>25°C - 45°C</td>
+        <td>Mayor a 55°C</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>8. Frecuencia de mantenimiento</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tarea</th>
+        <th>Frecuencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Limpiar polvo externo</td>
+        <td>Cada semana</td>
+      </tr>
+      <tr>
+        <td>Limpiar polvo interno</td>
+        <td>Cada 3 meses</td>
+      </tr>
+      <tr>
+        <td>Actualizar Windows</td>
+        <td>Cada semana</td>
+      </tr>
+      <tr>
+        <td>Actualizar drivers</td>
+        <td>Cada mes</td>
+      </tr>
+      <tr>
+        <td>Desfragmentar HDD</td>
+        <td>Cada 3 meses</td>
+      </tr>
+      <tr>
+        <td>Cambiar pasta termica</td>
+        <td>Cada 1-2 anos</td>
+      </tr>
+      <tr>
+        <td>Revisar temperaturas</td>
+        <td>Cada mes</td>
+      </tr>
+      <tr>
+        <td>Backup de datos</td>
+        <td>Cada semana</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="consejo">
+    <strong>Recuerda:</strong> Un buen mantenimiento prolonga la vida de tu PC y evita problemas costosos. Es mejor prevenir que reparar.
+  </div>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Mantenimiento de PC - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

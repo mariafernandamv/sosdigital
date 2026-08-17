@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Limpieza de PC - SOS DIGITAL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 30px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #2980b9;
+      margin-top: 30px;
+      border-left: 4px solid #3498db;
+      padding-left: 10px;
+    }
+    h3 {
+      color: #16a085;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background-color: #2c3e50;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .paso {
+      background: #eaf2f8;
+      border-left: 4px solid #2980b9;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .paso strong {
+      color: #2c3e50;
+    }
+    .alerta {
+      background: #fdedec;
+      border-left: 4px solid #e74c3c;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .alerta strong {
+      color: #c0392b;
+    }
+    .consejo {
+      background: #eafaf1;
+      border-left: 4px solid #27ae60;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .consejo strong {
+      color: #1e8449;
+    }
+    ul, ol {
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .portada {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+    .portada h1 {
+      font-size: 2.2em;
+      border: none;
+    }
+    .portada p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .img-container p {
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 6px;
+      font-style: italic;
+    }
+    .img-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .img-row img {
+      max-width: 48%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    @media print {
+      body { margin: 0; padding: 20px; }
+      img { max-width: 500px !important; height: auto !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Limpieza de PC</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <div class="img-container">
+    <img src="https://depor.com/resizer/v2/OWUV6G3QU5FC5DWOZQ2AV3QAT4.jpg?auth=79e2e0db4671edbd8a68591487ff164ddb6f04a3ea5044b4e83066c188c969cb&width=980&height=528&quality=75&smart=true" alt="Limpiando computadora de escritorio">
+    <p>Limpiando el interior de una PC de escritorio - Fuente: Depor</p>
+  </div>
+
+  <h2>1. Materiales necesarios</h2>
+  <p>Antes de comenzar, asegurate de tener todos los materiales a la mano:</p>
+
+  <div class="img-container">
+    <img src="https://images.pexels.com/photos/16720099/pexels-photo-16720099.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Set de destornilladores">
+    <p>Set de destorniladores de precision - herramienta esencial para desarmar la PC</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Material</th>
+        <th>Para que sirve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pulsera antiestatica (wrist strap)</td>
+        <td>Evita que la electricidad estatica danne los componentes electronicos</td>
+      </tr>
+      <tr>
+        <td>Set de destorniladores (phillips y plano)</td>
+        <td>Para abrir el gabinete y desmontar componentes internos</td>
+      </tr>
+      <tr>
+        <td>Aire comprimido en lata</td>
+        <td>Para sacar el polvo de lugares dificiles de alcanzar como disipadores y ventiladores</td>
+      </tr>
+      <tr>
+        <td>Brocha suave (tipo pincel)</td>
+        <td>Para remover el polvo suelto de placas y componentes</td>
+      </tr>
+      <tr>
+        <td>Alcohol isopropilico al 90%</td>
+        <td>Para limpiar contactos y superficies sin dejar residuos</td>
+      </tr>
+      <tr>
+        <td>Paño de microfibra o trapo limpio</td>
+        <td>Para limpiar el exterior del gabinete y pantallas</td>
+      </tr>
+      <tr>
+        <td>Recipientes o charolas pequenas</td>
+        <td>Para guardar los tornillos y no perderlos durante el ensamblaje</td>
+      </tr>
+      <tr>
+        <td>Guantes de látex (opcional)</td>
+        <td>Para proteger las manos y evitar dejar grasa en los componentes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>2. La pulsera antiestatica (wrist strap)</h2>
+
+  <div class="img-container">
+    <img src="https://srseguridad.com/wp-content/uploads/2023/02/SP1035-3.png" alt="Pulsera antiestatica">
+    <p>Pulsera antiestatica con correa ajustable - Fuente: Sr. Seguridad</p>
+  </div>
+
+  <h3>Que es y por que es importante</h3>
+  <p>La pulsera antiestatica es un dispositivo de seguridad que se coloca en la muñeca y se conecta a una superficie conductora. Su funcion es descargar la electricidad estatica de tu cuerpo antes de que toque los componentes electronicos.</p>
+
+  <div class="alerta">
+    <strong>IMPORTANTE:</strong> La pulsera SIEMPRE debe estar conectada a algo de metal (el chasis del gabinete, una radiador, o cualquier objeto metalico conectado a tierra). Si no la conectas a metal, no cumple su funcion y podrias danar los componentes.
+  </div>
+
+  <h3>Como usar la pulsera</h3>
+  <ol>
+    <li>Coloca la pulsera ajustada en tu muñeca (la piel debe tocar el metal interno).</li>
+    <li><strong>Conecta el clip o gancho a algo de metal</strong> como el chasis del gabinete, una tuberia o una radiador. Esto es lo mas importante: sin esta conexion a metal, la pulsera no funciona.</li>
+    <li>Mientras trabajes, asegurate de que el cable de la pulsera no estorbe ni se suelte.</li>
+    <li>Si en algun momento te la quitas, vuelve a ponertela antes de tocar cualquier componente.</li>
+  </ol>
+
+  <div class="consejo">
+    <strong>Consejo:</strong> Si no tienes pulsera antiestatica, toca periodicamente el metal del gabinete (que este conectado a la corriente pero apagado) para descargarte. Sin embargo, la pulsera es mucho mas segura.
+  </div>
+
+  <h2>3. Como desarmar la PC</h2>
+
+  <div class="img-container">
+    <img src="https://images.pexels.com/photos/31854236/pexels-photo-31854236.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gabinete de PC abierto">
+    <p>Gabinete de PC abierto mostrando los componentes internos</p>
+  </div>
+
+  <h3>Paso 1: Preparacion</h3>
+  <div class="paso">
+    <strong>3.1</strong> Apaga la computadora completamente (no solo suspension).<br>
+    <strong>3.2</strong> Desconecta el cable de corriente de la parte trasera de la fuente de poder.<br>
+    <strong>3.3</strong> Desconecta todos los cables externos: monitor, teclado, mouse, USB, ethernet, etc.<br>
+    <strong>3.4</strong> Lleva el gabinete a un lugar bien ventilado y con espacio suficiente para trabajar.
+  </div>
+
+  <h3>Paso 2: Abrir el gabinete</h3>
+  <div class="paso">
+    <strong>3.5</strong> Coloca el gabinete de costado con la panel lateral hacia arriba.<br>
+    <strong>3.6</strong> Retira los tornillos de la panel lateral (generalmente 2 o 4 tornillos en la parte trasera).<br>
+    <strong>3.7</strong> Desliza la panel lateral hacia atras y retirala con cuidado.<br>
+    <strong>3.8</strong> Guarda los tornillos en un recipiente para no perderlos.
+  </div>
+
+  <h3>Paso 3: Identificar los componentes</h3>
+  <p>Una vez abierto el gabinete, identifica:</p>
+
+  <div class="img-row">
+    <img src="https://images.pexels.com/photos/28429503/pexels-photo-28429503.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Disipador CPU cooler">
+    <img src="https://images.pexels.com/photos/33337469/pexels-photo-33337469.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Fuente de poder PSU">
+  </div>
+  <p style="text-align:center; font-size:0.85em; color:#777; font-style:italic;">Izquierda: Disipador/Cooler del CPU | Derecha: Fuente de poder (PSU)</p>
+
+  <ul>
+    <li><strong>Fuente de poder:</strong> Caja metalica generalmente en la parte superior o inferior trasera.</li>
+    <li><strong>Tarjeta madre:</strong> Placa grande donde se conectan todos los componentes.</li>
+    <li><strong>Procesador (CPU):</strong> Chip cuadrado cubierto por un disipador o ventilador.</li>
+    <li><strong>RAM:</strong> Barras delgadas insertadas en slots largos cerca del CPU.</li>
+    <li><strong>Disco duro / SSD:</strong> Dispositivos de almacenamiento en bahias.</li>
+    <li><strong>Ventiladores:</strong> Disipador del CPU, ventilador del gabinete, ventilador de la tarjeta de video.</li>
+  </ul>
+
+  <h3>Paso 4: Desmontar componentes (opcional, para limpieza profunda)</h3>
+  <div class="paso">
+    <strong>3.9</strong> <strong>Disipador/Cooler del CPU:</strong> Desconecta el cable del ventilador de la tarjeta madre, luego afloja los tornillos o clips que lo sujetan. Retiralo con cuidado levantando recto hacia arriba.<br>
+    <strong>3.10</strong> <strong>RAM:</strong> Presiona los clips de ambos extremos del slot y la memoria saldra sola. No toques los contactos dorados con los dedos.<br>
+    <strong>3.11</strong> <strong>Tarjeta de video:</strong> Afloja el tornillo de la bracket y presiona el clip del slot PCIe.<br>
+    <strong>3.12</strong> <strong>Discos duros:</strong> Desconecta los cables SATA y de alimentacion, y afloja los tornillos de la bahia.
+  </div>
+
+  <div class="alerta">
+    <strong>CUIDADO:</strong> Nunca fuerces ningun componente. Si algo no sale facil, revisa si hay un tornillo, clip o cable que este sujetando. Toma fotos antes de desmontar para recordar como iba todo.
+  </div>
+
+  <h2>4. Proceso de limpieza</h2>
+
+  <div class="img-container">
+    <img src="https://images.pexels.com/photos/14990192/pexels-photo-14990192.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Componentes de PC limpios">
+    <p>Interior de una PC despues de una limpieza completa</p>
+  </div>
+
+  <h3>4.1 Limpieza del polvo</h3>
+  <ol>
+    <li>Usa la brocha suave para remover el polvo suelto de la tarjeta madre, slots de RAM, ventiladores y disipadores.</li>
+    <li>Con aire comprimido, sopla cortos bursts (1-2 segundos) sobre los ventiladores sujetandolos con el dedo para que no giren libremente (girar un ventilador sin conexion puede generar voltaje inverso).</li>
+    <li>Limpia las aspas de los ventiladores con un pano humedecido con alcohol isopropilico.</li>
+    <li>Sopla aire comprimido en los slots de RAM y PCIe para removing polvo acumulado.</li>
+    <li>Limpia el disipador del CPU: entre las laminas de metal con aire comprimido y la brocha.</li>
+  </ol>
+
+  <h3>4.2 Limpieza exterior</h3>
+  <ol>
+    <li>Con un pano de microfibra humedecido (no mojado), limpia las paredes del gabinete por dentro y por fuera.</li>
+    <li>Limpia los filtros de polvo delanteros y traseros (si los tiene) con agua y jabon, y dejalos secar completamente antes de volver a colocarlos.</li>
+    <li>Con alcohol isopropilico, limpia los puertos USB y audios del panel frontal si estan sucios.</li>
+  </ol>
+
+  <h3>4.3 Limpieza de contactos (opcional)</h3>
+
+  <div class="img-container">
+    <img src="https://images.pexels.com/photos/34353877/pexels-photo-34353877.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pasta termica y procesador">
+    <p>Procesador y jeringa de pasta termica - buen momento para reemplazarla</p>
+  </div>
+
+  <ol>
+    <li>Con un pano sin pelusa humedecido en alcohol isopropilico, limpia los contactos dorados de la RAM frotando suavemente.</li>
+    <li>Deja secar completamente antes de reinstalar.</li>
+    <li>Si la pasta termica esta seca y endurecida, es buen momento para reemplazarla (ver manual de pasta termica).</li>
+  </ol>
+
+  <div class="consejo">
+    <strong>Consejo:</strong> Nunca uses agua para limpiar componentes electronicos. El alcohol isopropilico es seguro porque se evapora rapido y no deja residuos conductores.
+  </div>
+
+  <h2>5. Como armar la PC de vuelta</h2>
+
+  <div class="img-container">
+    <img src="https://images.pexels.com/photos/19892598/pexels-photo-19892598.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Motherboard con componentes">
+    <p>Tarjeta madre con procesador y componentes listos para ensamblar</p>
+  </div>
+
+  <h3>Paso 1: Reinstalar componentes</h3>
+  <div class="paso">
+    <strong>5.1</strong> Si retiraste el procesador, coloca el CPU en su socket alineando la flecha o mark con la esquina indicada. Baja la palanca de sujecion sin fuerza excesiva.<br>
+    <strong>5.2</strong> Aplica la pasta termica si es necesario (grano del tamano de un guisante en el centro del CPU).<br>
+    <strong>5.3</strong> Coloca el disipador/coolers y fijalo con sus tornillos o clips. Conecta el cable del ventilador al header "CPU_FAN" de la tarjeta madre.<br>
+    <strong>5.4</strong> Inserta la RAM alineando la muesca del modulo con la del slot. Presiona firmemente hasta que los clips cierren solos.<br>
+    <strong>5.5</strong> Reinstala la tarjeta de video, discos duros y cualquier otro componente retirado.
+  </div>
+
+  <h3>Paso 2: Reconectar cables</h3>
+  <div class="paso">
+    <strong>5.6</strong> Conecta el cable de alimentacion de 24 pines a la tarjeta madre.<br>
+    <strong>5.7</strong> Conecta el cable de alimentacion de 4/8 pines del CPU (junto al socket).<br>
+    <strong>5.8</strong> Conecta los cables SATA a los discos duros y a la tarjeta madre.<br>
+    <strong>5.9</strong> Conecta los cables del panel frontal (power sw, reset sw, hdd led, power led) segun el manual de tu tarjeta madre.<br>
+    <strong>5.10</strong> Conecta los cables USB del panel frontal y el de audio frontal (HD_AUDIO).
+  </div>
+
+  <h3>Paso 3: Cerrar y probar</h3>
+  <div class="paso">
+    <strong>5.11</strong> Revisa que no sobre ningun cable suelto dentro del gabinete.<br>
+    <strong>5.12</strong> Coloca la panel lateral de vuelta y fijala con los tornillos.<br>
+    <strong>5.13</strong> Reconecta los cables externos: corriente, monitor, teclado, mouse, internet.<br>
+    <strong>5.14</strong> Enciende la PC y verifica que todo funcione: ventiladores giran, el sistema operativo carga, no hay mensajes de error en el BIOS.
+  </div>
+
+  <div class="alerta">
+    <strong>Si la PC no enciende:</strong> Verifica que el switch de la fuente de poder este en la posicion I (encendido), que todos los cables internos esten bien conectados y que la RAM este bien asentada en sus slots.
+  </div>
+
+  <h2>6. Frecuencia recomendada de limpieza</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Entorno</th>
+        <th>Frecuencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Oficina o cuarto cerrado</td>
+        <td>Cada 6 a 12 meses</td>
+      </tr>
+      <tr>
+        <td>Hogar con mascotas o polvo</td>
+        <td>Cada 3 a 6 meses</td>
+      </tr>
+      <tr>
+        <td>Taller o zona de construccion</td>
+        <td>Cada 1 a 3 meses</td>
+      </tr>
+      <tr>
+        <td>Gaming intensivo</td>
+        <td>Cada 3 a 6 meses</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Limpieza de PC - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

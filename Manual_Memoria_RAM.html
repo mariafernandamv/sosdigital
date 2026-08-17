@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Memoria RAM - SOS DIGITAL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 30px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 3px solid #8e44ad;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #8e44ad;
+      margin-top: 30px;
+      border-left: 4px solid #8e44ad;
+      padding-left: 10px;
+    }
+    h3 {
+      color: #16a085;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background-color: #8e44ad;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f5f0fa;
+    }
+    .paso {
+      background: #f4ecf7;
+      border-left: 4px solid #8e44ad;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .paso strong {
+      color: #2c3e50;
+    }
+    .alerta {
+      background: #fdedec;
+      border-left: 4px solid #e74c3c;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .alerta strong {
+      color: #c0392b;
+    }
+    .consejo {
+      background: #eafaf1;
+      border-left: 4px solid #27ae60;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .consejo strong {
+      color: #1e8449;
+    }
+    ul, ol {
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .portada {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+    .portada h1 {
+      font-size: 2.2em;
+      border: none;
+    }
+    .portada p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .img-container p {
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 6px;
+      font-style: italic;
+    }
+    .img-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .img-row img {
+      max-width: 48%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .compat-table td:first-child {
+      font-weight: bold;
+      color: #8e44ad;
+    }
+    @media print {
+      body { margin: 0; padding: 20px; }
+      img { max-width: 500px !important; height: auto !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Memoria RAM</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <div class="img-container">
+    <img src="https://images.pexels.com/photos/33792054/pexels-photo-33792054.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Memoria RAM DDR5">
+    <p>Memoria RAM DDR5 instalada en tarjeta madre</p>
+  </div>
+
+  <h2>1. Que es la Memoria RAM</h2>
+  <p>La RAM (Random Access Memory) es la memoria de trabajo temporal de la computadora. Almacena temporalmente los datos que el procesador necesita usar en ese momento. A diferencia del disco duro, la RAM pierde toda su informacion cuando apagas la PC.</p>
+
+  <div class="consejo">
+    <strong>Analogia:</strong> Piensa en la RAM como el escritorio de trabajo. Cuanto mas grande sea, mas papeles (programas) puedes tener abiertos al mismo tiempo sin que la PC se ponga lenta.
+  </div>
+
+  <h3>Funciones principales</h3>
+  <ul>
+    <li>Almacena los programas que estan ejecutandose en ese momento.</li>
+    <li>Guarda los archivos temporalmente mientras los usas.</li>
+    <li>Permite el acceso rapido a datos por parte del procesador.</li>
+    <li>Define cuantos programas puedes tener abiertos sin lag.</li>
+  </ul>
+
+  <h2>2. Tipos de RAM que existen</h2>
+  <p>A lo largo de los anos se han creado varias generaciones de RAM. Cada una es mas rapida y eficiente que la anterior:</p>
+
+  <div class="img-container">
+    <img src="https://juhorpro.usa72.wondercdn.com/uploadfile/202509/d8143e3cac87e0b.jpg" alt="Tipos de memoria RAM DDR">
+    <p>Diferentes tipos de memoria RAM DDR - Fuente: Juhor</p>
+  </div>
+
+  <table class="compat-table">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Ano</th>
+        <th>Velocidad</th>
+        <th>Uso actual</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>DDR</td>
+        <td>2000</td>
+        <td>200-400 MHz</td>
+        <td>Equipos muy antiguos (ya no se fabrica)</td>
+      </tr>
+      <tr>
+        <td>DDR2</td>
+        <td>2003</td>
+        <td>400-1066 MHz</td>
+        <td>Equipos antiguos (ya no se fabrica)</td>
+      </tr>
+      <tr>
+        <td>DDR3</td>
+        <td>2007</td>
+        <td>800-2133 MHz</td>
+        <td>Equipos de hace 8-10 anos</td>
+      </tr>
+      <tr>
+        <td>DDR4</td>
+        <td>2014</td>
+        <td>2133-3200 MHz</td>
+        <td>La mas comun actualmente en PCs</td>
+      </tr>
+      <tr>
+        <td>DDR5</td>
+        <td>2020</td>
+        <td>4800-8400 MHz</td>
+        <td>Nueva generacion, alta gama y gaming</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alerta">
+    <strong>IMPORTANTE:</strong> Los tipos de RAM NO son compatibles entre si. Una memoria DDR4 NO entra en un slot de DDR3, y viceversa. Antes de comprar, verifica cual tipo usa tu tarjeta madre.
+  </div>
+
+  <h3>Como saber que tipo de RAM tienes</h3>
+  <ol>
+    <li><strong>En Windows:</strong> Presiona Ctrl + Shift + Esc, ve a "Rendimiento" y selecciona "Memoria". Ahi dice el tipo y velocidad.</li>
+    <li><strong>En Linux:</strong> Abre una terminal y escribe <code>sudo dmidecode -t memory</code>.</li>
+    <li><strong>Physicamente:</strong> Mira la etiqueta de la memoria. Generalmente dice DDR3, DDR4 o DDR5.</li>
+  </ol>
+
+  <h2>3. Como limpiar la RAM con borrador</h2>
+  <p>Con el tiempo, los contactos dorados de la RAM se oxidan o acumulan suciedad, lo que puede causar errores, pantallazos azules o que la PC no encienda. Limpiarlos con un borrador es un metodo sencillo y efectivo.</p>
+
+  <div class="img-container">
+    <img src="https://juhorpro.usa72.wondercdn.com/uploadfile/ueditor/image/202508/1756108609b4d9eb.jpg" alt="Memoria RAM DDR4 para laptop">
+    <p>Memoria RAM DDR4 - los contactos dorados se limcian con borrador de goma</p>
+  </div>
+
+  <h3>Materiales necesarios</h3>
+  <ul>
+    <li>Borrador de goma blanco (el comun de escuela, NO de colores ni con brillo)</li>
+    <li>Paño de microfibra limpio</li>
+    <li>Pulsera antiestatica (recomendado)</li>
+  </ul>
+
+  <h3>Pasos para limpiar la RAM</h3>
+  <div class="paso">
+    <strong>Paso 1:</strong> Apaga la PC y desconecta el cable de corriente. Espera 5 minutos para que se descargue cualquier residuo de electricidad.<br><br>
+    <strong>Paso 2:</strong> Ponte la pulsera antiestatica y conectala a metal del gabinete.<br><br>
+    <strong>Paso 3:</strong> Abre el gabinete y localiza las memorias RAM. Son barras largas y delgadas insertadas en slots cerca del procesador.<br><br>
+    <strong>Paso 4:</strong> Presiona los clips de ambos extremos del slot. La memoria saldra sola hacia arriba.<br><br>
+    <strong>Paso 5:</strong> Sujeta la RAM por los bordes (sin tocar los contactos dorados).<br><br>
+    <strong>Paso 6:</strong> Toma el borrador de goma y frotale suavemente los contactos dorados de abajo. Hazlo de forma lineal, de un lado al otro, sin presionar demasiado.<br><br>
+    <strong>Paso 7:</strong> Dale la vuelta y limpia el otro lado de los contactos con el borrador.<br><br>
+    <strong>Paso 8:</strong> Con el paño de microfibra, retira cualquier residuo de goma que haya quedado en la memoria.<br><br>
+    <strong>Paso 9:</strong> Vuelve a insertar la RAM en su slot, alineando la muesca. Presiona firmemente hasta que los clips cierren solos.
+  </div>
+
+  <div class="alerta">
+    <strong>CUIDADO:</strong> Nunca uses papel, lija, alcohol en los contactos con borrador, ni nada abrasivo. Solo el borrador de goma blanco. Los contactos dorados son muy delicados.
+  </div>
+
+  <div class="consejo">
+    <strong>Consejo:</strong> Si tu PC no enciende o se traba, probar limpiar la RAM con borrador es uno de los primeros pasos que debes dar antes de comprar componentes nuevos.
+  </div>
+
+  <h2>4. Como cambiar o instalar RAM</h2>
+
+  <div class="img-container">
+    <img src="https://images.pexels.com/photos/14990192/pexels-photo-14990192.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Interior de PC">
+    <p>Interior de una PC mostrando los slots de memoria RAM</p>
+  </div>
+
+  <h3>Antes de comprar nueva RAM verifica:</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Dato</th>
+        <th>Donde verlo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tipo de RAM (DDR3, DDR4, DDR5)</td>
+        <td>En el BIOS o con un programa como CPU-Z</td>
+      </tr>
+      <tr>
+        <td>Cuantos slots tienes</td>
+        <td>Abriendo el gabinete</td>
+      </tr>
+      <tr>
+        <td>Cuantos estan ocupados</td>
+        <td>Abriendo el gabinete</td>
+      </tr>
+      <tr>
+        <td>Velocidad maxima soportada</td>
+        <td>En la pagina de tu tarjeta madre</td>
+      </tr>
+      <tr>
+        <td>Capacidad maxima soportada</td>
+        <td>En la pagina de tu tarjeta madre</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Pasos para instalar nueva RAM</h3>
+  <div class="paso">
+    <strong>Paso 1:</strong> Apaga la PC, desconecta todo y ponte la pulsera antiestatica.<br><br>
+    <strong>Paso 2:</strong> Abre el gabinete y localiza los slots de RAM.<br><br>
+    <strong>Paso 3:</strong> Si vas a reemplazar, presiona los clips y retira la RAM vieja.<br><br>
+    <strong>Paso 4:</strong> Observa la muesca en la parte inferior de la memoria. Esa muesca debe coincir con la guia del slot (no se puede insertar al reves).<br><br>
+    <strong>Paso 5:</strong> Inserta la nueva RAM alineando la muesca. Presiona firmemente con ambos pulgares hasta que los clips cierren solos con un "click".<br><br>
+    <strong>Paso 6:</strong> Cierra el gabinete, reconecta los cables y enciende la PC.<br><br>
+    <strong>Paso 7:</strong> Entra al BIOS (presionando Supr o F2 al encender) y verifica que la RAM sea reconocida con la cantidad correcta.
+  </div>
+
+  <div class="consejo">
+    <strong>Consejo:</strong> Si instalas dos memorias, usalas en los slots del mismo color para activar el modo dual channel, que mejora el rendimiento.
+  </div>
+
+  <h2>5. Problemas comunes con la RAM</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sintoma</th>
+        <th>Causa posible</th>
+        <th>Solucion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>La PC no enciende</td>
+        <td>RAM mal insertada</td>
+        <td>Retira y vuelve a insertar la RAM</td>
+      </tr>
+      <tr>
+        <td>Pantallazo azul constante</td>
+        <td>RAM sucia o danada</td>
+        <td>Limpia con borrador o cambia la memoria</td>
+      </tr>
+      <tr>
+        <td>La PC es lenta</td>
+        <td>Poca RAM</td>
+        <td>Agrega mas memoria o cierra programas</td>
+      </tr>
+      <tr>
+        <td>No reconoce toda la RAM</td>
+        <td>Limite del sistema operativo</td>
+        <td>Windows 32-bit solo reconoce hasta 4 GB</td>
+      </tr>
+      <tr>
+        <td>Se apaga sola</td>
+        <td>RAM incompatible o defectuosa</td>
+        <td>Prueba con otra memoria o verifica compatibilidad</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Memoria RAM - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

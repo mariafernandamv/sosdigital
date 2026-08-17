@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Limpieza de Software - SOS DIGITAL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 30px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 3px solid #e74c3c;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #e74c3c;
+      margin-top: 30px;
+      border-left: 4px solid #e74c3c;
+      padding-left: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background-color: #e74c3c;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #fdedec;
+    }
+    .paso {
+      background: #fdedec;
+      border-left: 4px solid #e74c3c;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .paso strong {
+      color: #2c3e50;
+    }
+    .alerta {
+      background: #fdedec;
+      border-left: 4px solid #e74c3c;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .alerta strong {
+      color: #c0392b;
+    }
+    .consejo {
+      background: #eafaf1;
+      border-left: 4px solid #27ae60;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .consejo strong {
+      color: #1e8449;
+    }
+    ul, ol {
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .portada {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+    .portada h1 {
+      font-size: 2.2em;
+      border: none;
+    }
+    .portada p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .img-container p {
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 6px;
+      font-style: italic;
+    }
+    @media print {
+      body { margin: 0; padding: 20px; }
+      img { max-width: 500px !important; height: auto !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Limpieza de Software</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <h2>1. Por que limpiar el software</h2>
+  <p>Con el tiempo, tu PC se llena de programas innecesarios, archivos temporales y datos basura que la vuelven lenta. Limpiar el software ayuda a:</p>
+
+  <ul>
+    <li><strong>Mejorar la velocidad</strong> de la PC</li>
+    <li><strong>Liberar espacio</strong> en el disco duro</li>
+    <li><strong>Eliminar malware</strong> y programas no deseados</li>
+    <li><strong>Reducir el riesgo</strong> de fallos y errores</li>
+    <li><strong>Mejorar la seguridad</strong> del sistema</li>
+  </ul>
+
+  <h2>2. Programas innecesarios</h2>
+
+  <div class="paso">
+    <strong>Paso 1:</strong> Ve a <strong>Configuracion > Aplicaciones > Aplicaciones instaladas</strong>.<br><br>
+    <strong>Paso 2:</strong> Ordena por <strong>"Tamano"</strong> para ver los programas que mas espacio ocupan.<br><br>
+    <strong>Paso 3:</strong> Desinstala los programas que no usas. Algunos ejemplos de programas que puedes eliminar:<br>
+    - Juegos preinstalados<br>
+    - Herramientas de prueba (trial) vencidas<br>
+    - Navegadores duplicados (si solo usas uno)<br>
+    - Programas de fabricantes de PC que no necesitas<br>
+    - Toolbars y extensiones innecesarias
+  </div>
+
+  <div class="alerta">
+    <strong>CUIDADO:</strong> No desinstales programas que no reconozcas. Algunos son esenciales para Windows. Si no estas seguro, buscalo en Google antes de eliminarlo.
+  </div>
+
+  <h2>3. Limpiar archivos temporales</h2>
+
+  <div class="paso">
+    <strong>Paso 4:</strong> Presiona <strong>Windows + R</strong> y escribe <code>cleanmgr</code>. Presiona Enter.<br><br>
+    <strong>Paso 5:</strong> Selecciona el disco que quieres limpiar (generalmente C:).<br><br>
+    <strong>Paso 6:</strong> Marca todas las casillas (archivos temporales, cache, papelera de reciclaje, etc.).<br><br>
+    <strong>Paso 7:</strong> Haz clic en <strong>"Aceptar"</strong> y luego <strong>"Eliminar archivos"</strong>.<br><br>
+    <strong>Paso 8:</strong> Repite el proceso haciendo clic en <strong>"Limpiar archivos del sistema"</strong> para eliminar actualizaciones anteriores de Windows.
+  </div>
+
+  <h2>4. Herramientas de limpieza recomendadas</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Herramienta</th>
+        <th>Funcion</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>CCleaner</strong></td>
+        <td>Limpieza de archivos temporales y registro</td>
+        <td>Gratis / Premium</td>
+      </tr>
+      <tr>
+        <td><strong>BleachBit</strong></td>
+        <td>Limpieza profunda (alternativa a CCleaner)</td>
+        <td>Gratis</td>
+      </tr>
+      <tr>
+        <td><strong>Windows Disk Cleanup</strong></td>
+        <td>Limpieza basica incluida en Windows</td>
+        <td>Gratis</td>
+      </tr>
+      <tr>
+        <td><strong>Revo Uninstaller</strong></td>
+        <td>Desinstalacion completa de programas</td>
+        <td>Gratis / Premium</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>5. Desactivar programas de inicio</h2>
+
+  <div class="paso">
+    <strong>Paso 9:</strong> Presiona <strong>Ctrl + Shift + Esc</strong> para abrir el Administrador de tareas.<br><br>
+    <strong>Paso 10:</strong> Ve a la pestaña <strong>"Inicio"</strong>.<br><br>
+    <strong>Paso 11:</strong> Desactiva los programas que no necesitas al encender la PC (clic derecho > "Deshabilitar").<br><br>
+    <strong>Paso 12:</strong> Solo deja activos los programas esenciales (antivirus, drivers de audio, etc.).
+  </div>
+
+  <div class="consejo">
+    <strong>Consejo:</strong> Cuantos menos programas se inicien con Windows, mas rapido arrancara tu PC.
+  </div>
+
+  <h2>6. Desinstalar programas desde la terminal</h2>
+
+  <div class="paso">
+    <strong>En Windows (PowerShell):</strong><br>
+    <code>Get-AppxPackage *nombre* | Remove-AppxPackage</code><br><br>
+    <strong>En Linux (Ubuntu/Mint):</strong><br>
+    <code>sudo apt remove nombre-del-programa</code><br>
+    <code>sudo apt autoremove</code> (elimina dependencias no usadas)
+  </div>
+
+  <h2>7. Limpiar el navegador</h2>
+
+  <div class="paso">
+    <strong>Paso 13:</strong> Abre tu navegador (Chrome, Edge, Firefox).<br><br>
+    <strong>Paso 14:</strong> Presiona <strong>Ctrl + Shift + Supr</strong>.<br><br>
+    <strong>Paso 15:</strong> Selecciona <strong>"Todo el tiempo"</strong> en el rango de fechas.<br><br>
+    <strong>Paso 16:</strong> Marca: cookies, cache, historial de descargas, datos de formularios.<br><br>
+    <strong>Paso 17:</strong> Haz clic en <strong>"Borrar datos"</strong>.<br><br>
+    <strong>Paso 18:</strong> Revisa las extensiones del navegador y elimina las que no uses.
+  </div>
+
+  <h2>8. Frecuencia de limpieza</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tarea</th>
+        <th>Frecuencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Limpiar archivos temporales</td>
+        <td>Cada 2 semanas</td>
+      </tr>
+      <tr>
+        <td>Desinstalar programas innecesarios</td>
+        <td>Cada mes</td>
+      </tr>
+      <tr>
+        <td>Limpiar el navegador</td>
+        <td>Cada semana</td>
+      </tr>
+      <tr>
+        <td>Desactivar programas de inicio</td>
+        <td>Cada mes</td>
+      </tr>
+      <tr>
+        <td>Desfragmentar disco HDD</td>
+        <td>Cada 3 meses</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="consejo">
+    <strong>Recuerda:</strong> Los discos SSD NO necesitan desfragmentacion. Solo aplica para discos HDD mecanicos.
+  </div>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Limpieza de Software - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Instalacion de Linux - SOS DIGITAL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 30px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 3px solid #e67e22;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #e67e22;
+      margin-top: 30px;
+      border-left: 4px solid #e67e22;
+      padding-left: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background-color: #e67e22;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #fef5e7;
+    }
+    .paso {
+      background: #fef5e7;
+      border-left: 4px solid #e67e22;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .paso strong {
+      color: #2c3e50;
+    }
+    .alerta {
+      background: #fdedec;
+      border-left: 4px solid #e74c3c;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .alerta strong {
+      color: #c0392b;
+    }
+    .consejo {
+      background: #eafaf1;
+      border-left: 4px solid #27ae60;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+    .consejo strong {
+      color: #1e8449;
+    }
+    ul, ol {
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .portada {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+    .portada h1 {
+      font-size: 2.2em;
+      border: none;
+    }
+    .portada p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .img-container p {
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 6px;
+      font-style: italic;
+    }
+    @media print {
+      body { margin: 0; padding: 20px; }
+      img { max-width: 500px !important; height: auto !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portada">
+    <h1>Manual de Instalacion de Linux</h1>
+    <p><strong>SOS DIGITAL</strong> - Colegio Tecnico Profesional de Puriscal</p>
+    <p>Curso de Servicios en la Nube | 2026</p>
+    <hr>
+  </div>
+
+  <h2>1. Que es Linux</h2>
+  <p>Linux es un sistema operativo gratuito y de codigo abierto, similar a Windows pero sin costo. Es usado en servidores, supercomputadoras, dispositivos moviles y PC de escritorio. Es mas seguro, rapido y personalizable que Windows.</p>
+
+  <div class="consejo">
+    <strong>Ventajas de Linux:</strong> Gratuito, seguro, rapido, no se vuelve lento con el tiempo, no necesita antivirus, y funciona en computadoras viejas.
+  </div>
+
+  <h2>2. Distribuciones populares</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Distribucion</th>
+        <th>Uso principal</th>
+        <th>Nivel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Ubuntu</strong></td>
+        <td>Escritorio, servidores</td>
+        <td>Principiante</td>
+      </tr>
+      <tr>
+        <td><strong>Linux Mint</strong></td>
+        <td>Escritorio (parecido a Windows)</td>
+        <td>Principiante</td>
+      </tr>
+      <tr>
+        <td><strong>Fedora</strong></td>
+        <td>Desarrollo, servidores</td>
+        <td>Intermedio</td>
+      </tr>
+      <tr>
+        <td><strong>Debian</strong></td>
+        <td>Servidores, estabilidad</td>
+        <td>Intermedio</td>
+      </tr>
+      <tr>
+        <td><strong>CentOS</strong></td>
+        <td>Servidores empresariales</td>
+        <td>Avanzado</td>
+      </tr>
+      <tr>
+        <td><strong>Kali Linux</strong></td>
+        <td>Seguridad informatica</td>
+        <td>Avanzado</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="consejo">
+    <strong>Para principiantes:</strong> Te recomiendo <strong>Ubuntu</strong> o <strong>Linux Mint</strong>. Son los mas faciles de usar y tienen mucha documentacion en espanol.
+  </div>
+
+  <h2>3. Crear USB booteable</h2>
+
+  <div class="paso">
+    <strong>Paso 1:</strong> Descarga la ISO de la distribucion que elegiste desde su pagina oficial:<br>
+    - Ubuntu: https://ubuntu.com/download/desktop<br>
+    - Linux Mint: https://linuxmint.com/download.php<br><br>
+    <strong>Paso 2:</strong> Descarga <strong>Rufus</strong> desde https://rufus.ie (es gratis y portable).<br><br>
+    <strong>Paso 3:</strong> Inserta un USB de al menos 4 GB.<br><br>
+    <strong>Paso 4:</strong> Abre Rufus y selecciona tu USB en "Dispositivo".<br><br>
+    <strong>Paso 5:</strong> Haz clic en "SELECCIONAR" y busca el archivo ISO que descargaste.<br><br>
+    <strong>Paso 6:</strong> Deja las opciones por defecto (esquema de particionado: MBR o GPT segun tu PC).<br><br>
+    <strong>Paso 7:</strong> Haz clic en "INICIAR" y espera a que se cree el USB booteable.
+  </div>
+
+  <div class="alerta">
+    <strong>IMPORTANTE:</strong> Todos los datos del USB se borraran. Asegurate de respaldar lo que tengas antes de continuar.
+  </div>
+
+  <h2>4. Configurar BIOS/UEFI</h2>
+
+  <div class="paso">
+    <strong>Paso 8:</strong> Reinicia la PC y entra al BIOS presionando <strong>Supr</strong>, <strong>F2</strong> o <strong>F12</strong>.<br><br>
+    <strong>Paso 9:</strong> Ve a la pestaña <strong>"Boot"</strong> o <strong>"Arranque"</strong>.<br><br>
+    <strong>Paso 10:</strong> Cambia el orden de arranque y coloca el <strong>USB como primera opcion</strong>.<br><br>
+    <strong>Paso 11:</strong> Si tu PC es nueva, desactiva <strong>Secure Boot</strong> para poder instalar Linux.<br><br>
+    <strong>Paso 12:</strong> Guarda los cambios y reinicia.
+  </div>
+
+  <h2>5. Instalar Linux</h2>
+
+  <div class="paso">
+    <strong>Paso 13:</strong> La PC arrancara desde el USB. Selecciona <strong>"Probar Linux"</strong> (Try Linux) para probarlo sin instalar, o <strong>"Instalar Linux"</strong> para instalarlo directamente.<br><br>
+    <strong>Paso 14:</strong> Si elegiste instalar, selecciona el idioma y haz clic en <strong>"Continuar"</strong>.<br><br>
+    <strong>Paso 15:</strong> Selecciona <strong>"Borrar disco e instalar Linux"</strong> (instalacion limpia) o <strong>"Instalar junto a Windows"</strong> (dual boot).<br><br>
+    <strong>Paso 16:</strong> Selecciona la zona horaria.<br><br>
+    <strong>Paso 17:</strong> Crea tu cuenta de usuario: nombre, nombre de usuario y contraseña.<br><br>
+    <strong>Paso 18:</strong> Haz clic en <strong>"Instalar"</strong> y espera a que se complete la instalacion (10-20 minutos).<br><br>
+    <strong>Paso 19:</strong> Reinicia la PC y retira el USB cuando te lo indique.
+  </div>
+
+  <h2>6. Configuracion inicial</h2>
+
+  <div class="paso">
+    <strong>Paso 20:</strong> Al encender, veras el <strong>GRUB</strong> (menu de arranque). Selecciona Linux y presiona Enter.<br><br>
+    <strong>Paso 21:</strong> Inicia sesion con tu contraseña.<br><br>
+    <strong>Paso 22:</strong> Conectate a WiFi (icono de red arriba a la derecha).<br><br>
+    <strong>Paso 23:</strong> Abre el <strong>"Centro de software"</strong> o <strong>"Synaptic"</strong> para instalar programas desde la tienda.<br><br>
+    <strong>Paso 24:</strong> Actualiza el sistema ejecutando en la terminal: <code>sudo apt update && sudo apt upgrade</code>
+  </div>
+
+  <h2>7. Comandos basicos de terminal</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Comando</th>
+        <th>Funcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>sudo apt update</code></td>
+        <td>Actualizar lista de paquetes</td>
+      </tr>
+      <tr>
+        <td><code>sudo apt upgrade</code></td>
+        <td>Actualizar todos los paquetes</td>
+      </tr>
+      <tr>
+        <td><code>sudo apt install nombre</code></td>
+        <td>Instalar un programa</td>
+      </tr>
+      <tr>
+        <td><code>sudo apt remove nombre</code></td>
+        <td>Desinstalar un programa</td>
+      </tr>
+      <tr>
+        <td><code>ls</code></td>
+        <td>Ver archivos de la carpeta actual</td>
+      </tr>
+      <tr>
+        <td><code>cd carpeta</code></td>
+        <td>Cambiar de directorio</td>
+      </tr>
+      <tr>
+        <td><code>pwd</code></td>
+        <td>Ver ruta actual</td>
+      </tr>
+      <tr>
+        <td><code>sudo reboot</code></td>
+        <td>Reiniciar la PC</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="consejo">
+    <strong>Tip:</strong> No tengas miedo de la terminal. Es como el "Simbolo del sistema" de Windows pero mucho mas poderosa. Con ella puedes hacer casi todo.
+  </div>
+
+  <hr>
+  <p style="text-align:center; color:#888; font-size:0.9em;">
+    SOS DIGITAL - Manual de Instalacion de Linux - 2026<br>
+    Colegio Tecnico Profesional de Puriscal
+  </p>
+
+</body>
+</html>
