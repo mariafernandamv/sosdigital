@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
       <div class="footer-section">
         <h4>Siguenos en YouTube</h4>
-        <p><a href="https://www.youtube.com/" target="_blank">SOS DIGITAL en YouTube</a></p>
+        <p>Puedes seguirnos en nuestro canal de YouTube como <strong>sosodigitalcr</strong></p>
       </div>
       <div class="footer-section">
         <h4>Colegio Tecnico Profesional de Puriscal</h4>
