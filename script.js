@@ -36,10 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>Aprende informatica desde cero con nosotros.</p>
       </div>
       <div class="footer-section">
-        <h4>Siguenos en YouTube</h4>
-        <p>Puedes seguirnos en nuestro canal de YouTube como <strong>sosodigitalcr</strong></p>
-      </div>
-      <div class="footer-section">
         <h4>Colegio Tecnico Profesional de Puriscal</h4>
         <p>Estudiantes del curso de Servicios en la Nube</p>
       </div>
