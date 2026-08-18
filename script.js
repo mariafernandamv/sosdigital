@@ -27,24 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /* =========================
      FOOTER
   ========================= */
-  var footer = document.createElement("footer");
-  footer.className = "footer";
-  footer.innerHTML = `
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>SOS DIGITAL</h3>
-        <p>Aprende informatica desde cero con nosotros.</p>
-      </div>
-      <div class="footer-section">
-        <h4>Contactanos</h4>
-        <p><a href="mailto:sosdigitalcr@gmail.com">sosdigitalcr@gmail.com</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 SOS DIGITAL &middot; Colegio Tecnico Profesional de Puriscal</p>
-    </div>
-  `;
-  document.body.appendChild(footer);
+
 
   /* =========================
      MODO OSCURO
