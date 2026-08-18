@@ -39,13 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <h4>Contactanos</h4>
         <p><a href="mailto:sosdigitalcr@gmail.com">sosdigitalcr@gmail.com</a></p>
       </div>
-      <div class="footer-section">
-        <h4>Siguenos en YouTube</h4>
-        <p><a href="https://www.youtube.com/" target="_blank">youtube.com/sosodigitalcr</a></p>
-      </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 SOS DIGITAL &middot; Hecho por estudiantes</p>
+      <p>&copy; 2026 SOS DIGITAL &middot; Colegio Tecnico Profesional de Puriscal</p>
     </div>
   `;
   document.body.appendChild(footer);
