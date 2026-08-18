@@ -3,6 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
   var basePath = path.includes("/paginas/") ? "../" : "./";
 
   /* =========================
+     WRAPPER - envuelve todo el contenido existente
+  ========================= */
+  var wrapper = document.createElement("div");
+  wrapper.className = "page-wrapper";
+  var children = Array.prototype.slice.call(document.body.childNodes);
+  children.forEach(function (child) {
+    wrapper.appendChild(child);
+  });
+
+  /* =========================
      NAVBAR
   ========================= */
   var header = document.createElement("header");
@@ -22,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
       <button id="toggleDark" title="Cambiar tema">Modo oscuro</button>
     </div>
   `;
-  document.body.prepend(header);
 
   /* =========================
      FOOTER
@@ -44,6 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
       <p>&copy; 2026 SOS DIGITAL &middot; Colegio Tecnico Profesional de Puriscal</p>
     </div>
   `;
+
+  /* =========================
+     ESTRUCTURA: header + wrapper + footer
+  ========================= */
+  document.body.appendChild(header);
+  document.body.appendChild(wrapper);
   document.body.appendChild(footer);
 
 
