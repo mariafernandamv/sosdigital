@@ -37,14 +37,18 @@ body {
   color: var(--text);
   transition: background 0.3s, color 0.3s;
   line-height: 1.6;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
 }
 
-.page-wrapper {
-  flex: 1;
-}
+.header { grid-area: header; }
+.page-wrapper { grid-area: content; }
+.footer { grid-area: footer; }
 
 /* =========================
    HEADER
@@ -227,7 +231,6 @@ body.dark-mode .card {
   color: white;
   text-align: center;
   padding: 30px 20px;
-  margin-top: auto;
   width: 100%;
 }
 
